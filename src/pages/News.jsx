@@ -11,36 +11,6 @@ import expoOsakaImage from "../assets/expo_osaka_image.jpg";
 const newsItems = [
     {
         id: 1,
-        title: "CENTMED Co-PIs Awarded NYU Discovery Research Fund Grants",
-        subtitle: "Prof. Sohmyung Ha and Prof. Khalil Ramadi Receive Funding for Human Health Research",
-        date: "2025-10-29",
-        Image: ,
-        link: "https://www.linkedin.com/company/centmed/",
-        excerpt: "CENTMED Co-PIs Prof. Sohmyung Ha and Prof. Khalil Ramadi have been awarded grants from the NYU Discovery Research Fund for Human Health. Ha received a Planning Award for a wearable closed-loop neuromodulation system for sleep-disorder treatment, while Ramadi was granted an Early Stage research award for ingestible electronic devices targeting gut serotonergic signaling in gut and mood disorders.",
-        category: "Awards"
-    },
-    {
-        id: 2,
-        title: "Prof. Khalil Ramadi Featured on BBC World Service Live Event",
-        subtitle: "The Engineers: Exploring the Human at Royal Geographical Society",
-        date: "October 2025",
-        Image: ,
-        link: "https://lnkd.in/djFYFYwY",
-        excerpt: "CENTMED Co-director Prof. Khalil Ramadi was featured on BBC World Service discussing his groundbreaking work on FLASH, a capsule-sized pill with electrodes that stimulate the gut's neural network. He explained how the gut, known as the 'little brain' with the body's second-largest neural network, can be manipulated through ingestible electronics to potentially treat eating disorders and metabolic diseases. Prof. Ramadi appeared alongside Dr. Thomas Oxley (CEO, Synchron) and Prof. Eleanor Stride (University of Oxford) to discuss the future of engineering in redefining healthcare.",
-        category: "Publications"
-    },
-    {
-        id: 3,
-        title: "CENTMED Student Team Wins Innovation Award",
-        subtitle: "NYUAD duo awarded for groundbreaking dementia detection software at DOH innovation challenge.",
-        date: "November 20, 2024",
-        image: DOHInnovationChallengeImage,
-        link: "https://nyuad.nyu.edu/en/academics/divisions/engineering/engineering-awards-successes.html",
-        excerpt: "The NYUAD student team of Maksat Khobdabayev and Hyun Woo Lim, supervised by CENTMED, won the first prize at the Abu Dhabi Academic Healthcare Innovation Challenge by the Department of Health (DOH). The team developed an early dementia detection software. The official award ceremony was held on Nov. 20th 2024 at the St. Regis Saadiyat Island.",
-        category: "Awards"
-    },
-    {
-        id: 4,
         title: "Publication in Advanced Materials Interfaces",
         subtitle: "Study explores ion concentration polarization using experiments and molecular simulations",
         date: "May 05, 2025",
@@ -50,7 +20,7 @@ const newsItems = [
         category: "Publications"
     },
     {
-        id: 5,
+        id: 2,
         title: "Brain Organoids + Lizard Tails + Biomimicry",
         subtitle: "Dr. Rafael Song explores brain organoids, bioinspired materials, and the future of translational medicine.",
         date: "May 15, 2025",
@@ -60,7 +30,7 @@ const newsItems = [
         category: "Research"
     },
     {
-        id: 6,
+        id: 3,
         title: "CENTMED Showcases at Expo 2025 Osaka",
         subtitle: "Spotlight on wearable diagnostics and smart surgical tools at the UAE Pavilion",
         date: "April 15, 2025",
