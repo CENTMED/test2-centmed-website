@@ -33,7 +33,6 @@ import meeting6 from "../assets/meeting5.jpg"; //Meeting 6 is repeat of meeting 
 
 // Sample news data - replace with your actual data
 
-// News data - expanded from your home page
 const newsItems = [
     {
         id: 1,
@@ -93,41 +92,24 @@ const newsItems = [
     }
 ];
 
-// Meeting images data
-const meetingImages = [
-    {
-        id: 1,
-        image: meeting1,
-        caption: "Opening keynote presentation"
-    },
-    {
-        id: 2,
-        image: meeting2,
-        caption: "Research collaboration session"
-    },
-    {
-        id: 3,
-        image: meeting3,
-        caption: "Poster presentations"
-    },
-    {
-        id: 4,
-        image: meeting4,
-        caption: "Networking reception"
-    },
-    {
-        id: 5,
-        image: meeting5,
-        caption: "Panel discussion"
-    },
-    {
-        id: 6,
-        image: meeting6,
-        caption: "Group photo"
-    }
-    // Add more images as needed
-];
+const Home = () => {
+    const ecgRef = useRef(null);
 
+    useEffect(() => {
+        // Add class to body only on homepage
+        document.body.classList.add('home-page');
+
+        if (ecgRef.current) {
+            // Add class to trigger animation after component mounts
+            setTimeout(() => {
+                ecgRef.current.classList.add('animate-ecg');
+            }, 500); // Short delay to let the page load first
+        }
+        return () => {
+            // Clean up the class when leaving the homepage
+            document.body.classList.remove('home-page');
+        };
+    }, []);
 
 // News Carousel Component
 const NewsCarousel = () => {
@@ -202,88 +184,6 @@ const NewsCarousel = () => {
         </div>
     );
 };
-
-// Meeting Image Carousel Component
-const MeetingCarousel = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const imagesPerPage = 6;
-    const maxIndex = Math.max(0, Math.ceil(meetingImages.length / imagesPerPage) - 1);
-
-    const handlePrevious = () => {
-        setCurrentIndex(prevIndex => Math.max(0, prevIndex - 1));
-    };
-
-    const handleNext = () => {
-        setCurrentIndex(prevIndex => Math.min(maxIndex, prevIndex + 1));
-    };
-
-    const startIdx = currentIndex * imagesPerPage;
-    const visibleImages = meetingImages.slice(startIdx, startIdx + imagesPerPage);
-
-    return (
-        <div className="meeting-carousel-container">
-            <div className="meeting-carousel-header">
-                <h2 className="block-heading">Recent Event Highlights</h2>
-                <p className="block-section-text">
-                    Highlights from our recent all-investigator meeting, featuring collaborative discussions, research presentations, and team moments.
-                </p>
-            </div>
-
-            <div className="meeting-carousel-content">
-                {currentIndex > 0 && (
-                    <button
-                        className="carousel-arrow carousel-arrow-left"
-                        onClick={handlePrevious}
-                        aria-label="Previous images"
-                    >
-                        <ChevronLeft size={24} />
-                    </button>
-                )}
-
-                <div className="meeting-images-container">
-                    {visibleImages.map(item => (
-                        <div key={item.id} className="meeting-image-card">
-                            <img src={item.image} alt={item.caption} />
-                            <div className="meeting-image-overlay">
-                                {item.caption}
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                {currentIndex < maxIndex && (
-                    <button
-                        className="carousel-arrow carousel-arrow-right"
-                        onClick={handleNext}
-                        aria-label="Next images"
-                    >
-                        <ChevronRight size={24} />
-                    </button>
-                )}
-            </div>
-        </div>
-    );
-};
-
-const Home = () => {
-    const ecgRef = useRef(null);
-
-    useEffect(() => {
-        // Add class to body only on homepage
-        document.body.classList.add('home-page');
-
-        if (ecgRef.current) {
-            // Add class to trigger animation after component mounts
-            setTimeout(() => {
-                ecgRef.current.classList.add('animate-ecg');
-            }, 500); // Short delay to let the page load first
-        }
-        return () => {
-            // Clean up the class when leaving the homepage
-            document.body.classList.remove('home-page');
-        };
-    }, []);
-
     const textBlocks = [
         {
             id: 1,
@@ -423,18 +323,6 @@ const Home = () => {
                     </div>
                 </motion.section>
             ))}
-            {/* Meeting Highlights Section */}
-            <motion.section
-                className="content-section"
-                id="meeting-highlights"
-                viewport={{ once: false, amount: 0.3 }}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-            >
-                <MeetingCarousel />
-            </motion.section>
-
             {/* News Section with Carousel */}
             <motion.section
                 className="content-section"
