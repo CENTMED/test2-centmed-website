@@ -20,19 +20,6 @@ import WaelIEEEBioCas26 from "../assets/EditedWaelIEEEBioCas26.jpeg";
 import SongU3B from "../assets/SongU3B.jpeg";
 
 
-// Import your meeting images
-import meeting1 from "../assets/meeting1.jpg";
-import meeting2 from "../assets/meeting2.jpg";
-import meeting3 from "../assets/meeting3.jpg";
-import meeting4 from "../assets/meeting4.jpg";
-import meeting5 from "../assets/meeting5.jpg";
-import meeting6 from "../assets/meeting5.jpg"; //Meeting 6 is repeat of meeting 5
-// Add more as needed
-
-
-
-// Sample news data - replace with your actual data
-
 const newsItems = [
     {
         id: 1,
