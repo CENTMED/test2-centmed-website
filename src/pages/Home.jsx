@@ -18,6 +18,11 @@ import KhalilBBCEtH from "../assets/KhalilBBCEtH.png";
 import COPIsAwards from "../assets/CO-PIsAwards.png";
 import WaelIEEEBioCas26 from "../assets/EditedWaelIEEEBioCas26.jpeg";
 import SongU3B from "../assets/SongU3B.jpeg";
+import CoralGut from "../assets/CoralGut.png";
+import IonGel from "../assets/IonPolarNanofluidHydrogel.jpg";
+import ModFluid from "../assets/ModularReconfigMicroFludicDevice.jpeg";
+import OptoProbe from "../assets/OptoNeuralProbe.png";
+import PillNational from "../assets/WeightLossPillNational.jpeg";
 
 
 const newsItems = [
@@ -76,6 +81,41 @@ const newsItems = [
         subtitle: "The Engineers: Exploring the Human at Royal Geographical Society",
         image: KhalilBBCEtH,
         link: "https://www.linkedin.com/posts/centmed_the-new-medical-innovations-that-could-change-activity-7363618268642795520-5Ugx?utm_source=share&utm_medium=member_desktop&rcm=ACoAADox-OMB4nVfBHLe6FFM76xloIHaWxPEi4M",
+    },
+    {
+        id: 9,
+        title: "Modular Microfluidics + Spheroid Culture + Biomimicry",
+        subtitle: "Dr. Rafael Song's team unveils breakthrough microfluidic device that revolutionizes 3D cell culture for drug testing and disease modeling.",
+        image: ModFluid,
+        link: "https://doi.org/10.1063/5.0262536",
+    },
+    {
+        id: 10,
+        title: "3D-Printed Neural Probes + Optogenetics + Drug Delivery",
+        subtitle: "Prof. Sohmyung Ha's team develops multimodal optogenetic neural probe combining light stimulation and fluid injection in a single device.",
+        image: OptoProbe,
+        link: "https://doi.org/10.1038/s41598-025-13654-4",
+    },
+    {
+        id: 11,
+        title: "Wireless Light Pills + Gut-Brain Axis + Neuroengineering",
+        subtitle: "Professor Khalil Ramadi pioneers ingestible devices that wirelessly stimulate gut neurons to control hunger and nutrient absorption.",
+        image: PillNational,
+        link: "https://www.thenationalnews.com/health/2025/09/09/abu-dhabi-weight-loss-device/",
+    },
+    {
+        id: 12,
+        title: "Ion Concentration Polarization in Nanofluidic Hydrogels",
+        subtitle: "Professor Rafael Song's team combines experiments and molecular dynamics simulations to advance nanofluidic membrane technology.",
+        image: IonGel,
+        link: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/admi.202401018",
+    },
+    {
+        id: 13,
+        title: "CORAL: Passive Intestinal Microbiome Sampling Device",
+        subtitle: "CENTMED's ingestible capsule with tortuous lattices enables targeted gut microbiome sampling for disease research.",
+        image: CoralGut,
+        link: "https://lnkd.in/dmBMmjhg",
     }
 ];
 
