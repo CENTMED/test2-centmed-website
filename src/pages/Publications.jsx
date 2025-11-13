@@ -12,6 +12,27 @@ const Publications = () => {
     const publications = {
         journal: [
             {
+                title: "A 3D-printed Flour-based Heater with Boron-Nitride-enhanced Thermal Response, Self-healing Capability, and Biodegradability",
+                authors: "Binbin Guo, Jiawei Chen, Tianbiao Zeng, Keonghwan Oh, Hongqiao Qu, Jiaming Bai, and Sohmyung Ha",
+                journal: "Journal of Materials Research and Technology",
+                year: 2025,
+                doi: "https://doi.org/10.1016/j.jmrt.2025.11.023",
+            },
+            {
+                title: "Asynchronous Quadrature-phase Undersampling Technique for Wide-frequency Impedance Measurement",
+                authors: "Soon-Jae Kweon, Uljad Berdica, Hyunwoo Park, Muhammad Abrar Akram, Minji Lee, and Sohmyung Ha",
+                journal: "IEEE Transactions on Instrumentation and Measurement",
+                year: 2025,
+                doi: "https://doi.org/10.1109/TIM.2025.3600712",
+            },
+            {
+                title: "An Ultra-low-power Amplifier-less Potentiostat IC Based on Digital Regulation Loop",
+                authors: "Muhammad Abrar Akram, Aida Aberra, Soon-Jae Kweon, and Sohmyung Ha",
+                journal: "IEEE Transactions on Biomedical Circuits and Systems",
+                year: 2025,
+                doi: "https://doi.org/10.1109/TBCAS.2025.3527652",
+            },
+            {
                 title: "Passive intestinal microbiome sampling using an ingestible device with tortuous lattices.",
                 authors: "Hanan Mohammed, Sadaf Usmani, Brij Bhushan, Anique Ahmad, Oraib Al-Ketan, Ahmed A. Shibl, Maylis Boitet, Devjoy Dev, Heba Naser, Aashish R. Jha, Khalil B. Ramadi",
                 journal: "Cell Press",
