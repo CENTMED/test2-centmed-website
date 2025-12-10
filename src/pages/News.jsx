@@ -189,9 +189,9 @@ const newsItems = [
         subtitle: "A multifunctional 3D-printed optogenetic probe integrating light delivery and neural recording capabilities.",
         date: "June 29 - July 3, 2025",
         image: A3Dprintedoptogeneticdevice,
-        link: "",
+        link: "https://lnkd.in/dmBMmjh", //not real link, need to get it
         excerpt: "Published in the Proceedings of the International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers) 2025, Orlando, this study by Keonghwan Oh and Prof. Sohmyung Ha demonstrates a 3D-printed optogenetic device that integrates optical stimulation and neural signal recording through an embedded waveguide structure, enhancing precision in neural interfacing.",
-        category: "Conference"
+        category: "Publications"
     },
     {
         id: 18,
@@ -199,9 +199,9 @@ const newsItems = [
         subtitle: "A CNN-Transformer hybrid model for accurate sleep stage classification using raw single-channel ECG inputs.",
         date: "July 14-17, 2025",
         image: AutomaticSleepStageClassification,
-        link: "",
+        link: "https://lnkd.in/dmBMmjh", //not real link, need to get it
         excerpt: "Presented at the 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) 2025, Copenhagen, this paper by Moogyeom Kim, Seokjae Lee, Sohmyung Ha, Soon-Jae Kweon, and Minji Lee proposes a CNN-Transformer-based deep learning model for efficient sleep stage classification using single-channel ECG data, offering improved accuracy and reduced preprocessing complexity.",
-        category: "Conference"
+        category: "Publications"
     }
 
 ];
