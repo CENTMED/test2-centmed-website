@@ -103,7 +103,7 @@ const Publications = () => {
                 title: "3D-printed Optogenetic Device with a Recording-channel-embedded Waveguide",
                 authors: "Keonghwan Oh and Sohmyung Ha",
                 conference: "International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers)",
-                date: "June 29 - July 3, 2025",
+                date: "June 29 - 3, 2025",
                 location: "Orlando, FL, USA",
                 doi: "", //need link
             },
