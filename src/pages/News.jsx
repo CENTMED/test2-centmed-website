@@ -15,7 +15,11 @@ import IonGel from "../assets/IonPolarNanofluidHydrogel.jpg";
 import ModFluid from "../assets/ModularReconfigMicroFludicDevice.jpeg";
 import OptoProbe from "../assets/OptoNeuralProbe.png";
 import PillNational from "../assets/WeightLossPillNational.jpeg";
-
+import A3DprintedFlourbasedHeater from "../assets/A3DprintedFlourbasedHeater.jpg";
+import AsynchronousQuadraturePhase from "../assets/Asynchronous Quadrature-Phase.jpeg";
+import AnUltraLowPowerAmplifierLess from "../assets/AnUltraLowPowerAmplifierLess.jpeg";
+import AutomaticSleepStageClassification from "../assets/AutomaticSleepStageClassification.png";
+import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.jpg";
 
 // News data - expanded from your home page
 const newsItems = [
@@ -148,7 +152,58 @@ const newsItems = [
         link: "https://lnkd.in/dmBMmjhg",
         excerpt: "CENTMED presents CORAL, a passive ingestible capsule published in Device (Cell Press) that enables targeted sampling of the gastrointestinal tract. Led by Dr. Hanan Mohammed and Principal Investigator Prof. Khalil Ramadi, in collaboration with the Center for Genomics and Systems Biology's Aashish Jha and team, this technology provides a more accurate and comprehensive view of gut microbial communities, opening new avenues for studying gut health, disease mechanisms, and potential therapeutics.",
         category: "Publications"
+    },
+    {
+        id: 14,
+        title: "A 3D-printed Flour-based Heater with Boron-Nitride-enhanced Thermal Response, Self-healing Capability, and Biodegradability",
+        subtitle: "A 3D-printed biodegradable flour-based heater enhanced with boron nitride offers improved thermal response and self-healing capabilities.",
+        date: "2025",
+        image: A3DprintedFlourbasedHeater,
+        link: "https://doi.org/10.1016/j.jmrt.2025.11.023",
+        excerpt: "Published in the Journal of Materials Research and Technology, this study by Binbin Guo, Jiawei Chen, Tianbiao Zeng, Keonghwan Oh, Hongqiao Qu, Jiaming Bai, and Prof. Sohmyung Ha introduces a pioneering flour-based 3D-printed heater with enhanced heat transfer and self-healing properties, supporting sustainable and functional materials research.",
+        category: "Publications"
+    },
+    {
+        id: 15,
+        title: "Asynchronous Quadrature-phase Undersampling Technique for Wide-frequency Impedance Measurement",
+        subtitle: "A novel quadrature-phase undersampling technique improves wide-frequency impedance measurement accuracy and efficiency.",
+        date: "2025",
+        image: AsynchronousQuadraturePhase,
+        link: "https://doi.org/10.1109/TIM.2025.3600712",
+        excerpt: "Published in IEEE Transactions on Instrumentation and Measurement, this work by Soon-Jae Kweon, Uljad Berdica, Hyunwoo Park, Muhammad Abrar Akram, Minji Lee, and Prof. Sohmyung Ha presents an asynchronous quadrature-phase undersampling method that enhances precision across a broad impedance measurement spectrum.",
+        category: "Publications"
+    },
+    {
+        id: 16,
+        title: "An Ultra-low-power Amplifier-less Potentiostat IC Based on Digital Regulation Loop",
+        subtitle: "A low-power, amplifier-less potentiostat IC utilizing a digital regulation loop for advanced biosensing applications.",
+        date: "2025",
+        image: AnUltraLowPower_AmplifierLess,
+        link: "https://doi.org/10.1109/TBCAS.2025.3527652",
+        excerpt: "Featured in IEEE Transactions on Biomedical Circuits and Systems, this paper by Muhammad Abrar Akram, Aida Aberra, Soon-Jae Kweon, and Prof. Sohmyung Ha introduces an ultra-low-power potentiostat IC that eliminates traditional amplifiers through a digital regulation loop, paving the way for compact and energy-efficient biosensors.",
+        category: "Publication"
+    },
+    {
+        id: 17,
+        title: "3D-printed Optogenetic Device with a Recording-channel-embedded Waveguide",
+        subtitle: "A multifunctional 3D-printed optogenetic probe integrating light delivery and neural recording capabilities.",
+        date: "June 29 - July 3, 2025",
+        image: A3Dprintedoptogeneticdevice,
+        link: "",
+        excerpt: "Published in the Proceedings of the International Conference on Solid-State Sensors, Actuators and Microsystems (Transducers) 2025, Orlando, this study by Keonghwan Oh and Prof. Sohmyung Ha demonstrates a 3D-printed optogenetic device that integrates optical stimulation and neural signal recording through an embedded waveguide structure, enhancing precision in neural interfacing.",
+        category: "Conference"
+    },
+    {
+        id: 18,
+        title: "Sleep Stage Classification with CNN-Transformer-combined Structure Using Single-Channel Raw ECG",
+        subtitle: "A CNN-Transformer hybrid model for accurate sleep stage classification using raw single-channel ECG inputs.",
+        date: "July 14-17, 2025",
+        image: AutomaticSleepStageClassification,
+        link: "",
+        excerpt: "Presented at the 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) 2025, Copenhagen, this paper by Moogyeom Kim, Seokjae Lee, Sohmyung Ha, Soon-Jae Kweon, and Minji Lee proposes a CNN-Transformer-based deep learning model for efficient sleep stage classification using single-channel ECG data, offering improved accuracy and reduced preprocessing complexity.",
+        category: "Conference"
     }
+
 ];
 
 const News = () => {
@@ -232,3 +287,4 @@ const News = () => {
 };
 
 export default News;
+
