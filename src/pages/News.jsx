@@ -15,11 +15,11 @@ import IonGel from "../assets/IonPolarNanofluidHydrogel.jpg";
 import ModFluid from "../assets/ModularReconfigMicroFludicDevice.jpeg";
 import OptoProbe from "../assets/OptoNeuralProbe.png";
 import PillNational from "../assets/WeightLossPillNational.jpeg";
-import A3DprintedFlourbasedHeater from "../assets/A3DprintedFlourbasedHeater.jpg";
-import AsynchronousQuadraturePhase from "../assets/Asynchronous Quadrature-Phase.jpeg";
-import AnUltraLowPowerAmplifierLess from "../assets/AnUltraLowPowerAmplifierLess.jpeg";
-import AutomaticSleepStageClassification from "../assets/AutomaticSleepStageClassification.png";
-import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.jpg";
+import A3DprintedFlourbasedHeater from "../assets/WeightLossPillNational.jpeg";
+import AsynchronousQuadraturePhase from "../assets/WeightLossPillNational.jpeg";
+import AnUltraLowPowerAmplifierLess from "../assets/WeightLossPillNational.jpeg";
+import AutomaticSleepStageClassification from "../assets/WeightLossPillNational.jpeg";
+import A3Dprintedoptogeneticdevice from "../assets/WeightLossPillNational.jpeg";
 
 // News data - expanded from your home page
 const newsItems = [
