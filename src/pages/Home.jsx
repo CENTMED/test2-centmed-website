@@ -23,6 +23,11 @@ import IonGel from "../assets/IonPolarNanofluidHydrogel.jpg";
 import ModFluid from "../assets/ModularReconfigMicroFludicDevice.jpeg";
 import OptoProbe from "../assets/OptoNeuralProbe.png";
 import PillNational from "../assets/WeightLossPillNational.jpeg";
+import A3DprintedFlourbasedHeater from "../assets/A3DprintedFlourbasedHeater.jpg";
+import AsynchronousQuadraturePhase from "../assets/Asynchronous Quadrature-Phase.jpeg";
+import AnUltraLowPowerAmplifierLess from "../assets/AnUltraLowPowerAmplifierLess.jpeg";
+import AutomaticSleepStageClassification from "../assets/AutomaticSleepStageClassification.png";
+import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.jpg";
 
 
 const newsItems = [
@@ -116,6 +121,41 @@ const newsItems = [
         subtitle: "CENTMED's ingestible capsule with tortuous lattices enables targeted gut microbiome sampling for disease research.",
         image: CoralGut,
         link: "https://lnkd.in/dmBMmjhg",
+    },
+    {
+        id: 14,
+        title: "A 3D-printed Flour-based Heater with Boron-Nitride-enhanced Thermal Response, Self-healing Capability, and Biodegradability",
+        subtitle: "A 3D-printed biodegradable flour-based heater enhanced with boron nitride offers improved thermal response and self-healing capabilities.",
+        image: A3DprintedFlourbasedHeater,
+        link: "https://doi.org/10.1016/j.jmrt.2025.11.023",
+    },
+    {
+        id: 15,
+        title: "Asynchronous Quadrature-phase Undersampling Technique for Wide-frequency Impedance Measurement",
+        subtitle: "A novel quadrature-phase undersampling technique improves wide-frequency impedance measurement accuracy and efficiency.",
+        image: AsynchronousQuadraturePhase,
+        link: "https://doi.org/10.1109/TIM.2025.3600712",
+    },
+    {
+        id: 16,
+        title: "An Ultra-low-power Amplifier-less Potentiostat IC Based on Digital Regulation Loop",
+        subtitle: "A low-power, amplifier-less potentiostat IC utilizing a digital regulation loop for advanced biosensing applications.",
+        image: AnUltraLowPowerAmplifierLess,
+        link: "https://doi.org/10.1109/TBCAS.2025.3527652",
+    },
+    {
+        id: 17,
+        title: "3D-printed Optogenetic Device with a Recording-channel-embedded Waveguide",
+        subtitle: "A multifunctional 3D-printed optogenetic probe integrating light delivery and neural recording capabilities.",
+        image: A3Dprintedoptogeneticdevice,
+        link: "https://lnkd.in/dmBMmjhg", //not real link
+    },
+    {
+        id: 18,
+        title: "Sleep Stage Classification with CNN-Transformer-combined Structure Using Single-Channel Raw ECG",
+        subtitle: "A CNN-Transformer hybrid model for accurate sleep stage classification using raw single-channel ECG inputs.",
+        image: AutomaticSleepStageClassification,
+        link: "https://lnkd.in/dmBMmjhg", //not real link
     }
 ];
 
