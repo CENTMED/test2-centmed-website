@@ -48,7 +48,7 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/events" element={<Events />} />
         <Route path="/careers" element={<Careers />} />
-        <Route path="/events/medical-devices-implants-workshop-2026-03-18" element={<WorkshopNY />} />
+        /* <Route path="/events/medical-devices-implants-workshop-2026-03-18" element={<WorkshopNY />} /> */
       </Routes>
       <Footer />
     </Router>
