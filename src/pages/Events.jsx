@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion"; // Import motion from framer-motion
+import { Link } from "react-router-dom"; // Landing Page for NY Workshop
 import "./Events.css";
 import ScrollProgress from "../components/ScrollProgress.jsx";
 import { CalendarDays, Users, University } from "lucide-react";
@@ -50,6 +51,15 @@ const eventData = [
         university: "KAUST, Saudi Arabia",
         image: QiaoquiangGanImage,
     },
+    {
+        category: "Workshops",
+        title: "Medical Devices and Implants Workshop",
+        speaker: "NYU Langone Health + NYU Tandon + NYU Abu Dhabi (NYUAD)",
+        date: "March 18, 2026",
+        university: "19 Washington Square North, New York",
+        image: DrAdamKhalifa, // Replace with workshop image if available
+        detailsLink: "/events/medical-devices-implants-workshop-2026-03-18",
+      },
 ];
 
 const Events = () => {
@@ -73,6 +83,17 @@ const Events = () => {
                             <p className="event-speaker"><Users size={24} color="var(--purple)" /> {event.speaker}</p>
                             <p className="event-university"><University size={24} color="var(--purple)" /> {event.university}</p>
                             <p className="event-date"><CalendarDays size={24} color="var(--purple)" /> {event.date}</p>
+                            {event.detailsLink && (
+                        <div style={{ marginTop: "14px" }}>
+                              <Link
+                                to={event.detailsLink}
+                                className="section-button"
+                              >
+                                View details
+                              </Link>
+                            </div>
+                          )}
+                        </div>
                         </div>
                         <img className="event-image" src={event.image} alt={event.speaker} />
                     </motion.div>
