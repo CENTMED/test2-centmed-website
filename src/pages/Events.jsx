@@ -10,8 +10,18 @@ import SamuelTangImage from "../assets/SamuelTang_image.jpg";
 import QiaoquiangGanImage from "../assets/QiaoqiangGan_image.jpg";
 import DrAdamKhalifa from "../assets/DrAdamKhalifa.png";
 import ChulKimKAIST from "../assets/ChulKimKAIST.jpg";
+import nyHeroImage from "../assets/workshop_ny_hero.jpg"
 
 const eventData = [
+    {
+        category: "Workshops",
+        title: "Medical Devices and Implants Workshop",
+        speaker: "NYU Langone Health + NYU Tandon + NYU Abu Dhabi (NYUAD)",
+        date: "March 18, 2026",
+        university: "19 Washington Square North, New York",
+        image: DrAdamKhalifa, // replace if you have a dedicated workshop image
+        detailsLink: "/events/medical-devices-implants-workshop-2026-03-18",
+    },
     {
         category: "CENTMED Seminar Series",
         title: "Injectable, Wirelessly Powered Implants for Distributed Neural Interfacing within the IoB",
@@ -51,15 +61,6 @@ const eventData = [
         date: "Oct 4th, 2024",
         university: "KAUST, Saudi Arabia",
         image: QiaoquiangGanImage,
-    },
-    {
-        category: "Workshops",
-        title: "Medical Devices and Implants Workshop",
-        speaker: "NYU Langone Health + NYU Tandon + NYU Abu Dhabi (NYUAD)",
-        date: "March 18, 2026",
-        university: "19 Washington Square North, New York",
-        image: DrAdamKhalifa, // replace if you have a dedicated workshop image
-        detailsLink: "/events/medical-devices-implants-workshop-2026-03-18",
     },
 ];
 
