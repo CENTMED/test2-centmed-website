@@ -1,6 +1,7 @@
 .workshop-page {
   width: 100%;
   box-sizing: border-box;
+  padding-top: 100px;
 }
 
 /* --- HERO (image left, purple panel right) --- */
