@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { CalendarDays, MapPin, Mail, Ticket, Users, University } from "lucide-react";
 import "./WorkshopNY.css";
 
-// ✅ Put your hero image in /src/assets and update this import
 import workshopHero from "../assets/workshop_ny_hero.jpg";
 
 /**
@@ -163,6 +162,17 @@ const WorkshopNY = () => {
               This workshop convenes physicians from NYU Langone Health and engineers from NYU Tandon and
               NYU Abu Dhabi (NYUAD) working in translational medical devices. The event is co-sponsored
               by CENTMED. 
+            </p>
+
+            <p>
+              We invite you to attend our interdisciplinary workshop that brings together engineers, clinicians,
+              and researchers from NYU Tandon, NYU Abu Dhabi, NYU Langone Health, and University of Michigan
+              to explore the future of medical devices and implants. The workshop will focus on innovative
+              approaches to glaucoma treatment and beyond, highlighting cutting-edge research in microfluidics,
+              computational modeling, and translational device design. Through expert talks and discussions,
+              participants will gain insight into how engineering and medicine can collaborate to improve patient
+              outcomes. The discussion will also cover medical implants across ophthalmic, gastrointestinal, and
+              neurological applications, fostering new connections and collaborations.
             </p>
 
             <h3>Workshop theme</h3>
