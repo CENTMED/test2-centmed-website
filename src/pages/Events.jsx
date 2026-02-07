@@ -19,7 +19,7 @@ const eventData = [
         speaker: "NYU Langone Health + NYU Tandon + NYU Abu Dhabi (NYUAD)",
         date: "March 18, 2026",
         university: "19 Washington Square North, New York",
-        image: DrAdamKhalifa, // replace if you have a dedicated workshop image
+        image: nyHeroImage, // replace if you have a dedicated workshop image
         detailsLink: "/events/medical-devices-implants-workshop-2026-03-18",
     },
     {
