@@ -13,12 +13,12 @@ const EVENT = {
   slug: "medical-devices-implants-workshop-2026-03-18",
   title: "Medical Devices and Implants Workshop",
   dates: "March 18, 2026", // :contentReference[oaicite:2]{index=2}
-  cityLine: "New York, NY",
+  cityLine: "New York City, NY",
   venue: "19 Washington Square North (NYU Abu Dhabi base in New York)", // :contentReference[oaicite:3]{index=3}
   inviteLine: "Registration required",
   // Not present in the doc — keep placeholder until you provide it.
-  contactEmail: "nyuad.programs@nyu.edu", // REPLACE if you have the right inbox
-  capacityNote: "Please register to receive logistics and any pre-workshop materials.",
+  contactEmail: "nyuad.centmed.comms@nyu.edu", // Temporary email - See IT about replacement/common email
+  capacityNote: "Please register to receive logistics and any pre-workshop materials. \n Lunch will be provided.",
 };
 
 const WorkshopNY = () => {
@@ -28,7 +28,7 @@ const WorkshopNY = () => {
     email: "",
     affiliation: "",
     role: "",
-    dietary: "",
+    //dietary: "",
     consent: false,
   });
 
@@ -84,7 +84,7 @@ const WorkshopNY = () => {
         email: "",
         affiliation: "",
         role: "",
-        dietary: "",
+        //dietary: "",
         consent: false,
       });
     } catch (err) {
