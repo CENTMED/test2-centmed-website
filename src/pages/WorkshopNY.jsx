@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { CalendarDays, MapPin, Mail, Ticket, Users, University } from "lucide-react";
 import "./WorkshopNY.css";
 
-import workshopHero from "../assets/workshop_ny_hero.jpg";
+import workshopHero from "../assets/workshop_ny_header.png";
 
 /**
  * Content below is sourced from Sahin-Song Glaucoma work_YAS.docx.
