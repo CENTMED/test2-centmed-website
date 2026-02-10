@@ -1,7 +1,7 @@
 .workshop-page {
   width: 100%;
   box-sizing: border-box;
-  padding-top: 90px; 
+  padding-top: 90px;
 }
 
 /* --- HERO --- */
@@ -206,8 +206,8 @@
   font-size: 1rem;
   box-sizing: border-box;
 
-  background: #eee;     /* requested */
-  color: #111;          /* ensure readable */
+  background: #eee; /* requested */
+  color: #111; /* ensure readable */
 }
 
 .form-field textarea {
@@ -259,31 +259,7 @@
   color: #666;
 }
 
-/* --- Responsive --- */
-@media (max-width: 980px) {
-  .workshop-hero {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
-
-  .workshop-hero-left {
-    height: 42vh;
-  }
-
-  .workshop-hero-right {
-    padding: 2.2rem 1.4rem;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-
-  .workshop-body-card--full {
-    min-height: auto;
-  }
-}
-
-  /* Agenda table */
+/* ✅ FIX: Agenda table block is GLOBAL (not accidentally nested) */
 .workshop-body-card .agenda-table {
   margin-top: 1rem;
   border: 1px solid #e6e6e6;
@@ -312,5 +288,29 @@
 @media (max-width: 760px) {
   .workshop-body-card .agenda-table .agenda-row {
     grid-template-columns: 1fr;
+  }
+}
+
+/* --- Responsive --- */
+@media (max-width: 980px) {
+  .workshop-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .workshop-hero-left {
+    height: 42vh;
+  }
+
+  .workshop-hero-right {
+    padding: 2.2rem 1.4rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .workshop-body-card--full {
+    min-height: auto;
   }
 }
