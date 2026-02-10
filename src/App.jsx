@@ -17,7 +17,7 @@ import Events from "./pages/Events.jsx";
 import Careers from "./pages/Careers.jsx";
 import LoadingScreen from "./components/LoadingScreen";
 import Footer from './components/Footer.jsx';
-//import WorkshopNY from "./pages/WorkshopNY"; // No aliasing for NY Workshop
+import WorkshopNY from "./pages/WorkshopNY"; // No aliasing for NY Workshop
 import "./pages/WorkshopNY.css";
 
 function App() {
