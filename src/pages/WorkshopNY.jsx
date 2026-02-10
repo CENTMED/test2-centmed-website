@@ -12,11 +12,11 @@ const EVENT = {
   title: "Medical Device Innovation Workshop", 
   dates: "March 18, 2026",
   cityLine: "New York City, NY",
-  venue: "19 Washington Square North (NYU Abu Dhabi base in New York)",
+  venue: "Multipurpose Hall, 19 WSN, New York",
   inviteLine: "Registration required",
   contactEmail: "nyuad.centmed.comms@nyu.edu",
   capacityNote:
-    "Please register to receive logistics and any pre-workshop materials.\nLunch will be provided.",
+    "Please register to receive logistics and any pre-workshop materials.\n\nLunch will be provided.",
 };
 
 const WorkshopNY = () => {
