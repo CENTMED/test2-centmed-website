@@ -281,4 +281,33 @@
   .workshop-body-card--full {
     min-height: auto;
   }
+
+  .agenda-table {
+  margin-top: 1rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.agenda-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  border-top: 1px solid #efefef;
+}
+
+.agenda-row:first-child {
+  border-top: none;
+}
+
+.agenda-header {
+  font-weight: 800;
+  background: #f7f7f7;
+}
+
+@media (max-width: 760px) {
+  .agenda-row {
+    grid-template-columns: 1fr;
+  }
 }
