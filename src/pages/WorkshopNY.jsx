@@ -5,11 +5,6 @@ import "./WorkshopNY.css";
 
 import workshopHero from "../assets/workshop_ny_header.png";
 
-/*
- * Google Sheets capture via Apps Script Web App (recommended).
- * 1) Create Apps Script, deploy as Web App (Anyone with link).
- * 2) Paste the Web App URL below.
- */
 const GOOGLE_SHEETS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbw29hc6oFu0reTCDixTq4paFlC3S01Yjrooz3jc-d6aNNIa9vBKWcKFivzzTyFVjPOHEw/exec";
 
 const EVENT = {
@@ -63,7 +58,7 @@ const WorkshopNY = () => {
 
     setStatus({ state: "submitting", message: "" });
 
-    // ✅ Google Sheets submission via Apps Script Web App
+    // Google Sheets submission via Apps Script Web App
     try {
       if (!GOOGLE_SHEETS_WEBAPP_URL || GOOGLE_SHEETS_WEBAPP_URL.includes("PASTE_")) {
         throw new Error("Google Sheets Web App URL is not set.");
@@ -168,69 +163,110 @@ const WorkshopNY = () => {
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
             <h2>Overview</h2>
+            {/* DESCRIPTION (only) */}
             <p>
-              This workshop convenes physicians from NYU Langone Health and engineers from NYU Tandon and
-              NYU Abu Dhabi (NYUAD) working in translational medical devices. The event is co-sponsored
-              by CENTMED.
+              We invite you to attend our interdisciplinary workshop that brings together engineers,
+              clinicians, and researchers from NYU Tandon, NYU Abu Dhabi, NYU Langone Health, and
+              University of Michigan to explore the future of medical devices and implants. The
+              workshop will focus on innovative approaches to glaucoma treatment and beyond,
+              highlighting cutting-edge research in microfluidics, computational modeling, and
+              translational device design. Through expert talks and discussions, participants will
+              gain insight into how engineering and medicine can collaborate to improve patient
+              outcomes. The discussion will also cover medical implants across ophthalmic,
+              gastrointestinal, and neurological applications, fostering new connections and
+              collaborations.
             </p>
 
-            <p>
-              We invite you to attend our interdisciplinary workshop that brings together engineers, clinicians,
-              and researchers from NYU Tandon, NYU Abu Dhabi, NYU Langone Health, and University of Michigan to
-              explore the future of medical devices and implants. The workshop will focus on innovative approaches
-              to glaucoma treatment and beyond, highlighting cutting-edge research in microfluidics, computational
-              modeling, and translational device design. Through expert talks and discussions, participants will
-              gain insight into how engineering and medicine can collaborate to improve patient outcomes. The
-              discussion will also cover medical implants across ophthalmic, gastrointestinal, and neurological
-              applications, fostering new connections and collaborations.
-            </p>
-
-            <h3>Workshop theme</h3>
-            <p>
-              The program expands beyond glaucoma to cover a wide range of medical implants, from gastrointestinal
-              to neurological applications, with the goal of strengthening connections between NYU’s engineering and
-              medical communities to accelerate device development.
-            </p>
-
-            <h3>Featured collaboration</h3>
-            <p>
-              The workshop highlights a joint NYU Tandon–NYUAD project redesigning the Ahmed Glaucoma Valve, a widely
-              used implant for managing intraocular pressure (IOP) in glaucoma patients. While it has been a surgical
-              “gold standard,” the current design can fail in up to almost one-third of cases, contributing to
-              complications and extended recovery.
-            </p>
-
-            <h3>Technical focus</h3>
+            {/* PRESENTERS (only) */}
+            <h3>Presenters</h3>
             <ul>
-              <li>
-                Two alternative valve concepts: a micropillar-based passive valve (surface-tension driven, no moving
-                parts) and a single-membrane micro check valve (reduced complexity vs. double-membrane designs).
-              </li>
-              <li>
-                Combined computational + experimental workflow: CFD simulations (e.g., COMSOL/ANSYS) paired with
-                prototype fabrication and microfluidic testing in lab setups that mimic intraocular conditions.
-              </li>
-              <li>
-                Design goal: maintain IOP in the critical 8–12 mmHg range for advanced glaucoma while controlling flow.
-              </li>
+              <li>Iskender Sahin — NYU Tandon</li>
+              <li>Rafael Song — NYU Abu Dhabi</li>
+              <li>Andreas Hielscher — Department Head of Biomedical Engineering, NYU Tandon</li>
+              <li>Alon Harris — Icahn School of Medicine</li>
+              <li>Giovanna Guidoboni — University of Maine</li>
+              <li>Manjool Shah — University of Michigan</li>
+              <li>Nurbergen Aitmukhanbetov — NYU Abu Dhabi</li>
+              <li>Shy Shoham — Director, Tech4Health Institute, NYU Langone</li>
+              <li>Khalil Ramadi — NYU Abu Dhabi</li>
+              <li>Sohmyung Ha — NYU Abu Dhabi</li>
             </ul>
 
-            <h3>Hosts / institutions</h3>
-            <ul>
-              <li>
-                <b>NYU Tandon</b> — Iskender Sahin (Mechanical Engineering)
-              </li>
-              <li>
-                <b>NYU Abu Dhabi</b> — Yong-Ak (Rafael) Song (Engineering), Director of CENTMED
-              </li>
-              <li>
-                <b>NYU Langone Health</b> — participating physicians
-              </li>
-            </ul>
+            {/* AGENDA (only) */}
+            <h3>Agenda</h3>
+            <p><b>Wednesday, 18th March 2026 (EST)</b></p>
 
-            <p style={{ marginTop: "1rem" }}>
-              Detailed agenda and room logistics will be shared with registrants.
-            </p>
+            <div className="agenda-table">
+              <div className="agenda-row agenda-header">
+                <div>Time</div>
+                <div>Activity / Presentation</div>
+              </div>
+
+              <div className="agenda-row">
+                <div>9:00 - 9:15 AM</div>
+                <div>Welcome Remark by Iskender Sahin and Rafael Song</div>
+              </div>
+              <div className="agenda-row">
+                <div>9:15 - 9:30 AM</div>
+                <div>Introduction of CENTMED, Rafael Song</div>
+              </div>
+              <div className="agenda-row">
+                <div>9:30 - 10:00 AM</div>
+                <div>Andreas Hielscher, Department Head of Biomedical Engineering, NYU Tandon</div>
+              </div>
+              <div className="agenda-row">
+                <div>10:00 - 10:30 AM</div>
+                <div>Alon Harris, Icahn School of Medicine</div>
+              </div>
+              <div className="agenda-row">
+                <div>10:30 - 11:00 AM</div>
+                <div>Coffee Break</div>
+              </div>
+              <div className="agenda-row">
+                <div>11:00 - 11:30 AM</div>
+                <div>Giovanna Guidoboni, University of Maine</div>
+              </div>
+              <div className="agenda-row">
+                <div>11:30 - 12:00 PM</div>
+                <div>Manjool Shah, University of Michigan</div>
+              </div>
+              <div className="agenda-row">
+                <div>12:00 - 12:30 PM</div>
+                <div>Nurbergen Aitmukhanbetov, NYUAD</div>
+              </div>
+              <div className="agenda-row">
+                <div>12:30 - 2:00 PM</div>
+                <div>Lunch</div>
+              </div>
+              <div className="agenda-row">
+                <div>2:00 - 2:30 PM</div>
+                <div>Shy Shoham, Director, Tech4Health Institute, NYU Langone</div>
+              </div>
+              <div className="agenda-row">
+                <div>2:30 - 3:00 PM</div>
+                <div>Rafael Song, NYUAD</div>
+              </div>
+              <div className="agenda-row">
+                <div>3:00 - 3:30 PM</div>
+                <div>Khalil Ramadi, NYUAD</div>
+              </div>
+              <div className="agenda-row">
+                <div>3:30 - 4:00 PM</div>
+                <div>Sohmyung Ha, NYUAD</div>
+              </div>
+              <div className="agenda-row">
+                <div>4:00 - 4:30 PM</div>
+                <div>Iskender Sahin, NYU Tandon</div>
+              </div>
+              <div className="agenda-row">
+                <div>4:30 - 5:30 PM</div>
+                <div>Reception on the balcony</div>
+              </div>
+              <div className="agenda-row">
+                <div>6:00 - 8:00 PM</div>
+                <div>Dinner</div>
+              </div>
+            </div>
           </motion.div>
 
           {/* Registration card */}
