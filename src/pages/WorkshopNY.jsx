@@ -129,9 +129,9 @@ const WorkshopNY = () => {
               <p>
                 <MapPin size={18} /> <span>{EVENT.venue}</span>
               </p>
-              <p>
+              {/*
                 <Users size={18} /> <span>{EVENT.cityLine}</span>
-              </p>
+              </p> */}
               <p>
                 <Ticket size={18} /> <span>{EVENT.inviteLine}</span>
               </p>
