@@ -89,9 +89,6 @@ const WorkshopNY = () => {
         body,
       }); // In no-cors mode the response is opaque; if fetch didn't throw, assume success.
 
-      // Some Apps Script deployments return 200 + text; be tolerant
-      if (!res.ok) throw new Error("Request failed");
-
       setStatus({
         state: "success",
         message: "Registered! Check your email for confirmation and logistics.",
