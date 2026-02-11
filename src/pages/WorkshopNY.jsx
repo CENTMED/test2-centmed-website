@@ -11,7 +11,6 @@ const EVENT = {
   slug: "medical-devices-implants-workshop-2026-03-18",
   title: "Medical Device Innovation Workshop", 
   dates: "March 18, 2026",
-  //cityLine: "New York City, NY",
   venue: "19 Washington Square North, New York, NY 1001",
   inviteLine: "Registration required",
   contactEmail: "nyuad.centmed.comms@nyu.edu",
@@ -70,11 +69,25 @@ const WorkshopNY = () => {
         submittedAt: new Date().toISOString(),
       };
 
-      const res = await fetch(GOOGLE_SHEETS_WEBAPP_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+      // Apps Script Web Apps are most reliable with form-encoded + no-cors
+      const body = new URLSearchParams({
+        eventSlug: payload.eventSlug,
+        submittedAt: payload.submittedAt,
+        firstName: payload.firstName,
+        lastName: payload.lastName,
+        email: payload.email,
+        affiliation: payload.affiliation,
+        role: payload.role,
+        comments: payload.comments,
+        consent: String(payload.consent),
       });
+      
+      await fetch(GOOGLE_SHEETS_WEBAPP_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+        body,
+      }); // In no-cors mode the response is opaque; if fetch didn't throw, assume success.
 
       // Some Apps Script deployments return 200 + text; be tolerant
       if (!res.ok) throw new Error("Request failed");
@@ -129,9 +142,6 @@ const WorkshopNY = () => {
               <p>
                 <MapPin size={18} /> <span>{EVENT.venue}</span>
               </p>
-              {/*
-                <Users size={18} /> <span>{EVENT.cityLine}</span>
-              </p> */}
               <p>
                 <Ticket size={18} /> <span>{EVENT.inviteLine}</span>
               </p>
