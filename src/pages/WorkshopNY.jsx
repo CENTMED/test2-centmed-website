@@ -11,8 +11,8 @@ const EVENT = {
   slug: "medical-devices-implants-workshop-2026-03-18",
   title: "Medical Device Innovation Workshop", 
   dates: "March 18, 2026",
-  cityLine: "New York City, NY",
-  venue: "Multipurpose Hall, 19 WSN, New York",
+  //cityLine: "New York City, NY",
+  venue: "19 Washington Square North, New York, NY 1001",
   inviteLine: "Registration required",
   contactEmail: "nyuad.centmed.comms@nyu.edu",
   capacityNote:
