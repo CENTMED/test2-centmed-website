@@ -271,7 +271,18 @@ const WorkshopNY = () => {
               </div>
               <div className="agenda-row">
                 <div>5:00 - 6:00 PM</div>
-                <div>Bridging the Bedside & the Bench: A MedTech Panel Discussion Panelists:  \n      Manjool Shah (Michigan) \n      Shy Shoham (NYU Langone) \n      Giovanna Guidobonni (Univ. of Maine) \n      Andreas Hielscher (NYU Tandon) \n      Sefy Paulose Joshi (NYU Langone) \nModerator: Rafael Song (NYUAD) </div>
+                <div>
+                  <strong>Bridging the Bedside & the Bench: A MedTech Panel Discussion</strong>
+                  <div>Panelists:</div>
+                  <ul>
+                    <li>Manjool Shah (Michigan)</li>
+                    <li>Shy Shoham (NYU Langone)</li>
+                    <li>Giovanna Guidobonni (Univ. of Maine)</li>
+                    <li>Andreas Hielscher (NYU Tandon)</li>
+                    <li>Sefy Paulose Joshi (NYU Langone)</li>
+                  </ul>
+                  <div>Moderator: Rafael Song (NYUAD)</div>
+                </div>
               </div>
               <div className="agenda-row">
                 <div>6:30 - 8:30 PM</div>
