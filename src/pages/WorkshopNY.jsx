@@ -213,17 +213,17 @@ const WorkshopNY = () => {
                 <div>9:00 - 9:15 AM</div>
                 <div>Welcome Remark by Iskender Sahin and Rafael Song</div>
               </div>
-              <div className="agenda-row">
+              {/* <div className="agenda-row">
                 <div>9:15 - 9:30 AM</div>
                 <div>Introduction of CENTMED, Rafael Song</div>
-              </div>
+              </div> */}
               <div className="agenda-row">
-                <div>9:30 - 10:00 AM</div>
-                <div>Andreas Hielscher, Department Head of Biomedical Engineering, NYU Tandon</div>
+                <div>9:15 - 10:00 AM</div>
+                <div>Seeing the Invisible: Real-Time Vascular Imaging with Wearable Optical Tomography by Andreas Hielscher, Department Head of Biomedical Engineering, NYU Tandon</div>
               </div>
               <div className="agenda-row">
                 <div>10:00 - 10:30 AM</div>
-                <div>Alon Harris, Icahn School of Medicine</div>
+                <div>Intra-body power transfer for wearable devices by Alon Harris, Icahn School of Medicine</div>
               </div>
               <div className="agenda-row">
                 <div>10:30 - 11:00 AM</div>
@@ -235,11 +235,11 @@ const WorkshopNY = () => {
               </div>
               <div className="agenda-row">
                 <div>11:30 - 12:00 PM</div>
-                <div>Manjool Shah, University of Michigan</div>
+                <div>The GDD Revolution: From Refractory Cases to Primary Care by Manjool Shah, University of Michigan</div>
               </div>
               <div className="agenda-row">
                 <div>12:00 - 12:30 PM</div>
-                <div>Nurbergen Aitmukhanbetov, NYUAD</div>
+                <div>Development of a New Minimally Invasive Glaucoma Implant by Nurbergen Aitmukhanbetov, NYUAD</div>
               </div>
               <div className="agenda-row">
                 <div>12:30 - 2:00 PM</div>
@@ -247,31 +247,35 @@ const WorkshopNY = () => {
               </div>
               <div className="agenda-row">
                 <div>2:00 - 2:30 PM</div>
-                <div>Shy Shoham, Director, Tech4Health Institute, NYU Langone</div>
+                <div>Engineering at the interface: from Neurotech development to Tech4Health by Shy Shoham, Director, Tech4Health Institute, NYU Langone</div>
               </div>
               <div className="agenda-row">
                 <div>2:30 - 3:00 PM</div>
-                <div>Rafael Song, NYUAD</div>
+                <div>Microphysiological Systems for Growing Organs and Organoids by Rafael Song, NYUAD</div>
               </div>
               <div className="agenda-row">
                 <div>3:00 - 3:30 PM</div>
-                <div>Khalil Ramadi, NYUAD</div>
+                <div>Devices you can eat: Speaking with the body through the gastrointestinal tract by Khalil Ramadi, NYUAD</div>
               </div>
               <div className="agenda-row">
                 <div>3:30 - 4:00 PM</div>
-                <div>Sohmyung Ha, NYUAD</div>
+                <div>Under Pressure: The Evolution of Glaucoma Devices by Sefy Paulose Joshi, NYU Langone Health</div>
               </div>
               <div className="agenda-row">
                 <div>4:00 - 4:30 PM</div>
-                <div>Iskender Sahin, NYU Tandon</div>
+                <div>Computational Study of Gene Therapy into the Retina by Iskender Sahin, NYU Tandon</div>
               </div>
               <div className="agenda-row">
-                <div>4:30 - 5:30 PM</div>
-                <div>Reception on the balcony</div>
+                <div>4:30 - 5:00 PM</div>
+                <div>Break</div>
               </div>
               <div className="agenda-row">
-                <div>6:00 - 8:00 PM</div>
-                <div>Dinner</div>
+                <div>5:00 - 6:00 PM</div>
+                <div>Bridging the Bedside & the Bench: A MedTech Panel Discussion Panelists:  \n      Manjool Shah (Michigan) \n      Shy Shoham (NYU Langone) \n      Giovanna Guidobonni (Univ. of Maine) \n      Andreas Hielscher (NYU Tandon) \n      Sefy Paulose Joshi (NYU Langone) \nModerator: Rafael Song (NYUAD) </div>
+              </div>
+              <div className="agenda-row">
+                <div>6:30 - 8:30 PM</div>
+                <div>Dinner at Chez Nous at The Marlton Hotel</div>
               </div>
             </div>
           </motion.div>
