@@ -193,7 +193,7 @@ const WorkshopNY = () => {
               <li>Giovanna Guidoboni — University of Maine</li>
               <li>Manjool Shah — University of Michigan</li>
               <li>Nurbergen Aitmukhanbetov — NYU Abu Dhabi</li>
-              <li>Shy Shoham — Director, Tech4Health Institute, NYU Langone</li>
+              <li>Shy Shoham — Professor of Neroscience and Opthamology, NYU School of Medicine and Tech4Health</li>
               <li>Khalil Ramadi — NYU Abu Dhabi</li>
               <li>Sohmyung Ha — NYU Abu Dhabi</li>
             </ul>
