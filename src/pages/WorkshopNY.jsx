@@ -190,13 +190,13 @@ const WorkshopNY = () => {
               <li>Iskender Sahin — NYU Tandon</li>
               <li>Rafael Song — NYU Abu Dhabi</li>
               <li>Andreas Hielscher — Department Head of Biomedical Engineering, NYU Tandon</li>
-              <li>Sohmunga Ha - NYU Abu Dhabi</li>
+              <li>Sohmunga Ha — NYU Abu Dhabi</li>
               <li>Giovanna Guidoboni — University of Maine</li>
               <li>Manjool Shah — University of Michigan</li>
               <li>Nurbergen Aitmukhanbetov — NYU Abu Dhabi</li>
               <li>Shy Shoham — Professor of Neroscience and Opthamology, NYU School of Medicine and Tech4Health</li>
               <li>Khalil Ramadi — NYU Abu Dhabi</li>
-              <li>Sefy Paulose Joshi - Assistant Professor of Ophthalmology, NYU Langone</li>
+              <li>Sefy Paulose Joshi — Assistant Professor of Ophthalmology, NYU Langone</li>
             </ul>
 
             {/* AGENDA (only) */}
