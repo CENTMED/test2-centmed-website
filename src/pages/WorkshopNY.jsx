@@ -219,13 +219,17 @@ const WorkshopNY = () => {
               </div> */}
               <div className="agenda-row">
                 <div>9:15 - 10:00 AM</div>
-                <div>Andreas Hielscher, Department Head of Biomedical Engineering, NYU Tandon</div>
-                <div>Seeing the Invisible: Real-Time Vascular Imaging with Wearable Optical Tomography</div>
+                <div>
+                  <div>Andreas Hielscher, Department Head of Biomedical Engineering, NYU Tandon</div>
+                  <div>Seeing the Invisible: Real-Time Vascular Imaging with Wearable Optical Tomography</div>
+                </div>
               </div>
               <div className="agenda-row">
                 <div>10:00 - 10:30 AM</div>
-                <div>Alon Harris, Icahn School of Medicine</div>
-                <div>Intra-body power transfer for wearable devices</div>
+                <div>
+                  <div>Alon Harris, Icahn School of Medicine</div>
+                  <div>Intra-body power transfer for wearable devices</div>
+                </div>
               </div>
               <div className="agenda-row">
                 <div>10:30 - 11:00 AM</div>
@@ -233,18 +237,24 @@ const WorkshopNY = () => {
               </div>
               <div className="agenda-row">
                 <div>11:00 - 11:30 AM</div>
-                <div>Giovanna Guidoboni, University of Maine</div>
-                {/* <div></div> add talk title*/}
+                <div>
+                  <div>Giovanna Guidoboni, University of Maine</div>
+                  {/* <div></div> add talk title*/}
+                </div>
               </div>
               <div className="agenda-row">
                 <div>11:30 - 12:00 PM</div>
-                <div>Manjool Shah, University of Michigan</div>
-                <div>The GDD Revolution: From Refractory Cases to Primary Care</div>
+                <div>
+                  <div>Manjool Shah, University of Michigan</div>
+                  <div>The GDD Revolution: From Refractory Cases to Primary Care</div>
+                </div>
               </div>
               <div className="agenda-row">
                 <div>12:00 - 12:30 PM</div>
-                <div>Nurbergen Aitmukhanbetov, NYUAD</div>
-                <div>Development of a New Minimally Invasive Glaucoma Implant</div>
+                <div>
+                  <div>Nurbergen Aitmukhanbetov, NYUAD</div>
+                  <div>Development of a New Minimally Invasive Glaucoma Implant</div>
+                </div>
               </div>
               <div className="agenda-row">
                 <div>12:30 - 2:00 PM</div>
@@ -252,28 +262,38 @@ const WorkshopNY = () => {
               </div>
               <div className="agenda-row">
                 <div>2:00 - 2:30 PM</div>
-                <div>Shy Shoham, Director, Tech4Health Institute, NYU Langone</div>
-                <div>Engineering at the interface: from Neurotech development to Tech4Health</div>
+                <div>
+                  <div>Shy Shoham, Director, Tech4Health Institute, NYU Langone</div>
+                  <div>Engineering at the interface: from Neurotech development to Tech4Health</div>
+                </div>
               </div>
               <div className="agenda-row">
                 <div>2:30 - 3:00 PM</div>
-                <div>Rafael Song, NYUAD</div>
-                <div>Microphysiological Systems for Growing Organs and Organoids</div>
+                <div>
+                  <div>Rafael Song, NYUAD</div>
+                  <div>Microphysiological Systems for Growing Organs and Organoids</div>
+                </div>
               </div>
               <div className="agenda-row">
                 <div>3:00 - 3:30 PM</div>
-                <div>Khalil Ramadi, NYUAD</div>
-                <div>Devices you can eat: Speaking with the body through the gastrointestinal tract</div>
+                <div>
+                  <div>Khalil Ramadi, NYUAD</div>
+                  <div>Devices you can eat: Speaking with the body through the gastrointestinal tract</div>
+                </div>
               </div>
               <div className="agenda-row">
                 <div>3:30 - 4:00 PM</div>
-                <div>Sefy Paulose Joshi, NYU Langone Health</div>
-                <div>Under Pressure: The Evolution of Glaucoma Devices</div>
+                <div>
+                  <div>Sefy Paulose Joshi, NYU Langone Health</div>
+                  <div>Under Pressure: The Evolution of Glaucoma Devices</div>
+                </div>
               </div>
               <div className="agenda-row">
                 <div>4:00 - 4:30 PM</div>
-                <div>Iskender Sahin, NYU Tandon</div>
-                <div>Computational Study of Gene Therapy into the Retina</div>
+                <div>
+                  <div>Iskender Sahin, NYU Tandon</div>
+                  <div>Computational Study of Gene Therapy into the Retina</div>
+                </div>
               </div>
               <div className="agenda-row">
                 <div>4:30 - 5:00 PM</div>
