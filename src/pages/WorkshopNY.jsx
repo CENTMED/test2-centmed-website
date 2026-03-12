@@ -196,7 +196,7 @@ const WorkshopNY = () => {
               <li>Nurbergen Aitmukhanbetov — NYU Abu Dhabi</li>
               <li>Shy Shoham — Professor of Neroscience and Opthamology, NYU School of Medicine and Tech4Health</li>
               <li>Khalil Ramadi — NYU Abu Dhabi</li>
-              <li>Sefy Paulose Joshi, Assistant Professor of Ophthalmology, NYU Langone</li>
+              <li>Sefy Paulose Joshi - Assistant Professor of Ophthalmology, NYU Langone</li>
             </ul>
 
             {/* AGENDA (only) */}
