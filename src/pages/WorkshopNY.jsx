@@ -172,9 +172,9 @@ const WorkshopNY = () => {
             <h2>Overview</h2>
             {/* DESCRIPTION (only) */}
             <p>
-              We invite you to attend our interdisciplinary workshop that brings together engineers,
-              clinicians, and researchers from NYU Tandon, NYU Abu Dhabi, NYU Langone Health, and
-              University of Michigan to explore the future of medical devices and implants. The
+              We invite you to attend our interdisciplinary workshop that brings together engineers, 
+              clinicians, and researchers from NYU Tandon, NYU Abu Dhabi, NYU Langone Health, University 
+              of Maine, and University of Michigan to explore the future of medical devices and implants. The
               workshop will focus on innovative approaches to glaucoma treatment and beyond,
               highlighting cutting-edge research in microfluidics, computational modeling, and
               translational device design. Through expert talks and discussions, participants will
@@ -235,7 +235,7 @@ const WorkshopNY = () => {
                 <div>11:00 - 11:30 AM</div>
                 <div>
                   <div>Giovanna Guidoboni, University of Maine</div>
-                  {/* <div></div> add talk title*/}
+                  <strong>From the Blackboard to the Clinic: digital twinning and artificial intelligence for personalized medicine</strong>
                 </div>
               </div>
               <div className="agenda-row">
