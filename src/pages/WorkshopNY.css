@@ -72,6 +72,13 @@
   white-space: pre-line;
 }
 
+.workshop-cta-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.8rem;
+}
+
 .workshop-cta {
   display: inline-block;
   margin-top: 1.8rem;
