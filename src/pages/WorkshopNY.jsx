@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { CalendarDays, MapPin, Mail, Ticket, Users } from "lucide-react";
 import "./WorkshopNY.css";
+import brochurePdf from "../assets/MDI-Workshop-Brochure-202602A_V2.pdf";
 
 import workshopHero from "../assets/workshop_ny_header.png";
 
@@ -151,9 +152,20 @@ const WorkshopNY = () => {
 
             <div className="workshop-panel-note">{EVENT.capacityNote}</div>
 
-            <a className="workshop-cta" href="#register">
-              Register
-            </a>
+            <div className="workshop-cta-row">
+              <a className="workshop-cta" href="#register">
+                Register
+              </a>
+            
+              <a
+                className="workshop-cta"
+                href={brochurePdf}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                E-Brochure
+              </a>
+            </div>
           </div>
         </div>
       </section>
