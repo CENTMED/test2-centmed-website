@@ -10,7 +10,7 @@ import SamuelTangImage from "../assets/SamuelTang_image.jpg";
 import QiaoquiangGanImage from "../assets/QiaoqiangGan_image.jpg";
 import DrAdamKhalifa from "../assets/DrAdamKhalifa.png";
 import ChulKimKAIST from "../assets/ChulKimKAIST.jpg";
-import nyHeroImage from "../assets/workshop_ny_hero.jpg"
+import nyHeroImage from "../assets/workshop_ny_header.png";
 
 const eventData = [
     {
