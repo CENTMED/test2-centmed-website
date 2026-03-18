@@ -176,9 +176,8 @@ const WorkshopNY = () => {
           {/* Overview full-width / full-screen card */}
           <motion.div
             className="workshop-body-card workshop-body-card--full"
-            initial={{ y: 18, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
+            initial={{ y: 0, opacity: 1 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
           >
             <h2>Overview</h2>
