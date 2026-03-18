@@ -298,6 +298,34 @@
   }
 }
 
+@media (max-width: 760px) {
+  .workshop-page {
+    padding-top: 70px;
+  }
+
+  .workshop-title {
+    font-size: 1.9rem;
+  }
+
+  .workshop-body-card,
+  .workshop-form-card {
+    padding: 1.25rem;
+  }
+
+  .workshop-body-card .agenda-table .agenda-row {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .workshop-meta p,
+  .workshop-contact a,
+  .workshop-body-card p,
+  .workshop-body-card li {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
 /* --- Responsive --- */
 @media (max-width: 980px) {
   .workshop-hero {
