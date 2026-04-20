@@ -20,7 +20,7 @@ import AsynchronousQuadraturePhase from "../assets/Asynchronous Quadrature-Phase
 import AnUltraLowPowerAmplifierLess from "../assets/AnUltraLowPowerAmplifierLess.jpeg";
 import AutomaticSleepStageClassification from "../assets/AutomaticSleepStageClassification.png";
 import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.jpg";
-import EnhancedEndoscopicInternalDrainage from "../assets/A3Dprintedoptogeneticdevice.jpg"; // upload proper picture
+import EnhancedEndoscopicInternalDrainage from "../assets/EnhancedEndoscopicInternalDrainage.png";
 
 
 
