@@ -12,6 +12,13 @@ const Publications = () => {
     const publications = {
         journal: [
             {
+                title: "Enhanced Endoscopic Internal Drainage of Gastric Abscess Through Additively Manufactured Stents",
+                authors: "Parima Phowarasoontorn, Yongbin Ko, Juan S. Barajas-Gamboa, Juan P. Pantoja, Oraib Al-Ketan, Mohamed Ali, Sungyun Sohn, Heba Tageldeen Naser, Abdel-Hameed Dabbour, Batoul Khlaifat, Ahmed AlZubaidi, Carlos Abril Vega, John Rodriguez, Matthew Kroh, Khalil B. Ramadi",
+                journal: "Advanced Healthcare Materials",
+                year: 2026,
+                doi: "https://doi.org/10.1002/adhm.202505860",
+            },
+            {
                 title: "A 3D-printed Flour-based Heater with Boron-Nitride-enhanced Thermal Response, Self-healing Capability, and Biodegradability",
                 authors: "Binbin Guo, Jiawei Chen, Tianbiao Zeng, Keonghwan Oh, Hongqiao Qu, Jiaming Bai, and Sohmyung Ha",
                 journal: "Journal of Materials Research and Technology",
