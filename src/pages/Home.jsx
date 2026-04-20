@@ -28,6 +28,7 @@ import AsynchronousQuadraturePhase from "../assets/Asynchronous Quadrature-Phase
 import AnUltraLowPowerAmplifierLess from "../assets/AnUltraLowPowerAmplifierLess.jpeg";
 import AutomaticSleepStageClassification from "../assets/AutomaticSleepStageClassification.png";
 import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.jpg";
+import EnhancedEndoscopicInternalDrainage from "../assets/EnhancedEndoscopicInternalDrainage.png";
 
 
 const newsItems = [
@@ -156,7 +157,15 @@ const newsItems = [
         subtitle: "A CNN-Transformer hybrid model for accurate sleep stage classification using raw single-channel ECG inputs.",
         image: AutomaticSleepStageClassification,
         link: "https://lnkd.in/dmBMmjhg", //not real link
+    },
+    {
+        id: 19,
+        title: "Enhanced Endoscopic Internal Drainage of Gastric Abscess Through Additively Manufactured Stents",
+        subtitle: "Additively Manufactured, Patient-Specific Stents for Improved Gastric Leak Drainage",
+        image: EnhancedEndoscopicInternalDrainage,
+        link: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adhm.202505860",
     }
+
 ];
 
 const Home = () => {
