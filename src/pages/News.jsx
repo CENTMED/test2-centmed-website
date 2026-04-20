@@ -20,6 +20,7 @@ import AsynchronousQuadraturePhase from "../assets/Asynchronous Quadrature-Phase
 import AnUltraLowPowerAmplifierLess from "../assets/AnUltraLowPowerAmplifierLess.jpeg";
 import AutomaticSleepStageClassification from "../assets/AutomaticSleepStageClassification.png";
 import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.jpg";
+import EnhancedEndoscopicInternalDrainage from "../assets/A3Dprintedoptogeneticdevice.jpg"; // upload proper picture
 
 
 
@@ -203,6 +204,16 @@ const newsItems = [
         image: AutomaticSleepStageClassification,
         link: "https://lnkd.in/dmBMmjhg",
         excerpt: "Presented at the 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) 2025, Copenhagen, this paper by Moogyeom Kim, Seokjae Lee, Sohmyung Ha, Soon-Jae Kweon, and Minji Lee proposes a CNN-Transformer-based deep learning model for efficient sleep stage classification using single-channel ECG data, offering improved accuracy and reduced preprocessing complexity.",
+        category: "Research"
+    },
+    {
+        id: 19,
+       title: "Enhanced Endoscopic Internal Drainage of Gastric Abscess Through Additively Manufactured Stents",
+        subtitle: "Additively Manufactured, Patient-Specific Stents for Improved Gastric Leak Drainage",
+        date: "April 04, 2026",
+        image: EnhancedEndoscopicInternalDrainage,
+        link: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adhm.202505860",
+        excerpt: "Postoperative gastric leaks remain a high-risk complication in bariatric surgery, with conventional double-pigtail stents often limited by poor anatomical fit, inadequate drainage, and migration. To overcome these challenges, the PETALS framework enables the design of personalized, SLA-fabricated stents optimized for fluid dynamics. The resulting Lily design demonstrates significantly improved performance, achieving higher flow rates and reduced hydraulic resistance, with the potential to enhance patient outcomes and reduce complication rates.",
         category: "Research"
     }
 ];
