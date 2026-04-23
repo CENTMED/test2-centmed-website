@@ -164,6 +164,13 @@ const newsItems = [
         subtitle: "Additively Manufactured, Patient-Specific Stents for Improved Gastric Leak Drainage",
         image: EnhancedEndoscopicInternalDrainage,
         link: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adhm.202505860",
+    },
+    {
+        id: 20,
+        title: "A 3D-Printing-Based Optogenetic Neural Stimulator Integrated with Three Neural Recording Channels",
+        subtitle: "This paper has been accepted for publication in IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE). The work on the 3D-Printed Optogenetic Device with Integrated Neural Recording Capability was supported by CENTMED and developed in collaboration with Professor Hyunjoo Jenny Lee’s lab at KAIST.",
+        image: tempTNSRE,
+        link: "", // Add link once its emailed to me
     }
 
 ];
