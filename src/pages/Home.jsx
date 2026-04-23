@@ -30,6 +30,7 @@ import AutomaticSleepStageClassification from "../assets/AutomaticSleepStageClas
 import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.jpg";
 import EnhancedEndoscopicInternalDrainage from "../assets/EnhancedEndoscopicInternalDrainage.png";
 import tempTNSRE from  "../assets/tempTNSRE.png";
+import nyu_tech_venture from  "../assets/nyu-tech-venture-2026.png";
 
 
 const newsItems = [
@@ -172,6 +173,13 @@ const newsItems = [
         subtitle: "This paper has been accepted for publication in IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE). The work on the 3D-Printed Optogenetic Device with Integrated Neural Recording Capability was supported by CENTMED and developed in collaboration with Professor Hyunjoo Jenny Lee’s lab at KAIST.",
         image: tempTNSRE,
         link: "", // Add link once its emailed to me
+    },
+    {
+        id: 21,
+        title: "CENTMED Research teams Selected for the NYU Tech Venture Workshop Spring 2026 Cohort",
+        subtitle: "CENTMED is proud to announce that three of its research teams have been selected for the prestigious Spring 2026 NYU Tech Venture Workshop.",
+        image: nyu_tech_venture,
+        link: "https://entrepreneur.nyu.edu/blog/2026/03/26/meet-the-teams-nyu-tech-venture-workshop-spring-2026-cohort/",
     },
 
 ];
