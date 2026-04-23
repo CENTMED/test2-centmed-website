@@ -29,7 +29,7 @@ import AnUltraLowPowerAmplifierLess from "../assets/AnUltraLowPowerAmplifierLess
 import AutomaticSleepStageClassification from "../assets/AutomaticSleepStageClassification.png";
 import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.jpg";
 import EnhancedEndoscopicInternalDrainage from "../assets/EnhancedEndoscopicInternalDrainage.png";
-import tempTNSRE from  "../assets/tempTNSRE.png ";
+import tempTNSRE from  "../assets/tempTNSRE.png";
 
 
 const newsItems = [
