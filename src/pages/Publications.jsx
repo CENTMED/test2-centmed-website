@@ -12,6 +12,13 @@ const Publications = () => {
     const publications = {
         journal: [
             {
+                title: "A 3D-Printing-Based Optogenetic Neural Stimulator Integrated with Three Neural Recording Channels",
+                authors: "Keonghwan Oh, Jihong Lim, Yehhyun Jo, Jiwan Woo, Yakdol Cho, Soon-Jae Kweon, Hyunjoo Jenny Lee, and Sohmyung Ha",
+                journal: "IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE)",
+                year: 2026,
+                doi: "", // Add link once its emailed to me
+            },
+            {
                 title: "Enhanced Endoscopic Internal Drainage of Gastric Abscess Through Additively Manufactured Stents",
                 authors: "Parima Phowarasoontorn, Yongbin Ko, Juan S. Barajas-Gamboa, Juan P. Pantoja, Oraib Al-Ketan, Mohamed Ali, Sungyun Sohn, Heba Tageldeen Naser, Abdel-Hameed Dabbour, Batoul Khlaifat, Ahmed AlZubaidi, Carlos Abril Vega, John Rodriguez, Matthew Kroh, Khalil B. Ramadi",
                 journal: "Advanced Healthcare Materials",
