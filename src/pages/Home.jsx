@@ -172,7 +172,7 @@ const newsItems = [
         subtitle: "This paper has been accepted for publication in IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE). The work on the 3D-Printed Optogenetic Device with Integrated Neural Recording Capability was supported by CENTMED and developed in collaboration with Professor Hyunjoo Jenny Lee’s lab at KAIST.",
         image: tempTNSRE,
         link: "", // Add link once its emailed to me
-    }
+    },
 
 ];
 
