@@ -235,7 +235,15 @@ const newsItems = [
         date: "Spring 2026",
         image: nyu_tech_venture,
         link: "https://entrepreneur.nyu.edu/blog/2026/03/26/meet-the-teams-nyu-tech-venture-workshop-spring-2026-cohort/",
-        excerpt: "In the Spring 2026 cohort of the Workshop, 9 teams were selected from across NYU and NYU Abu Dhabi. Of these, 3 teams from NYUAD are affiliated with CENTMED.<\n>Huge congratulations to the CENTMED teams for their work and achieving these amazing opportunities! <\r\n>Gather more info about the program and the selected teams here",
+        excerpt: (
+            <>
+                In the Spring 2026 cohort of the Workshop, 9 teams were selected from across NYU and NYU Abu Dhabi. Of these, 3 teams from NYUAD are affiliated with CENTMED.
+                <br /><br />
+                Huge congratulations to the CENTMED teams for their work and achieving these amazing opportunities!
+                <br /><br />
+                Gather more info about the program and the selected teams here
+            </>
+        ),
         category: "Awards"
     }
 
