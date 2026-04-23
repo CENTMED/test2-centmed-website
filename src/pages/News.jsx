@@ -22,6 +22,7 @@ import AutomaticSleepStageClassification from "../assets/AutomaticSleepStageClas
 import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.jpg";
 import EnhancedEndoscopicInternalDrainage from "../assets/EnhancedEndoscopicInternalDrainage.png";
 import tempTNSRE from  "../assets/tempTNSRE.png";
+import nyu_tech_venture from  "../assets/nyu-tech-venture-2026.png";
 
 
 
@@ -226,7 +227,18 @@ const newsItems = [
         link: "", // Add link once its emailed to me
         excerpt: "This work introduces a 3D-printed optogenetic stimulator that integrates both neural modulation and real-time signal recording in a single device. Leveraging two-photon polymerization (2PP), the design achieves micrometer-scale precision, incorporating a μLED and embedded micro-wires for stimulation and recording. Validation results confirm reliable electrical, optical, and impedance performance, demonstrating the device’s feasibility for simultaneous neural stimulation and biosignal monitoring, with potential applications in advanced neural modulation systems.",
         category: "Research"
+    },
+    {
+        id: 21,
+        title: "CENTMED Research teams Selected for the NYU Tech Venture Workshop Spring 2026 Cohort",
+        subtitle: "CENTMED is proud to announce that three of its research teams have been selected for the prestigious Spring 2026 NYU Tech Venture Workshop.",
+        date: "Spring 2026",
+        image: nyu_tech_venture,
+        link: "https://entrepreneur.nyu.edu/blog/2026/03/26/meet-the-teams-nyu-tech-venture-workshop-spring-2026-cohort/",
+        excerpt: "In the Spring 2026 cohort of the Workshop, 9 teams were selected from across NYU and NYU Abu Dhabi. Of these, 3 teams from NYUAD are affiliated with CENTMED. \nHuge congratulations to the CENTMED teams for their work and achieving these amazing opportunities! \nGather more info about the program and the selected teams here",
+        category: "Awards"
     }
+
 ];
 
 const News = () => {
