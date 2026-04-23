@@ -21,6 +21,7 @@ import AnUltraLowPowerAmplifierLess from "../assets/AnUltraLowPowerAmplifierLess
 import AutomaticSleepStageClassification from "../assets/AutomaticSleepStageClassification.png";
 import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.jpg";
 import EnhancedEndoscopicInternalDrainage from "../assets/EnhancedEndoscopicInternalDrainage.png";
+import tempTNSRE from  "../assets/tempTNSRE.png ";
 
 
 
@@ -214,6 +215,16 @@ const newsItems = [
         image: EnhancedEndoscopicInternalDrainage,
         link: "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adhm.202505860",
         excerpt: "Postoperative gastric leaks remain a high-risk complication in bariatric surgery, with conventional double-pigtail stents often limited by poor anatomical fit, inadequate drainage, and migration. To overcome these challenges, the PETALS framework enables the design of personalized, SLA-fabricated stents optimized for fluid dynamics. The resulting Lily design demonstrates significantly improved performance, achieving higher flow rates and reduced hydraulic resistance, with the potential to enhance patient outcomes and reduce complication rates.",
+        category: "Research"
+    },
+    {
+        id: 20,
+       title: "A 3D-Printing-Based Optogenetic Neural Stimulator Integrated with Three Neural Recording Channels",
+        subtitle: "3D-Printed Optogenetic Device with Integrated Neural Recording Capability",
+        date: "2026",
+        image: tempTNSRE,
+        link: "", // Add link once its emailed to me
+        excerpt: "This work introduces a 3D-printed optogenetic stimulator that integrates both neural modulation and real-time signal recording in a single device. Leveraging two-photon polymerization (2PP), the design achieves micrometer-scale precision, incorporating a μLED and embedded micro-wires for stimulation and recording. Validation results confirm reliable electrical, optical, and impedance performance, demonstrating the device’s feasibility for simultaneous neural stimulation and biosignal monitoring, with potential applications in advanced neural modulation systems.",
         category: "Research"
     }
 ];
