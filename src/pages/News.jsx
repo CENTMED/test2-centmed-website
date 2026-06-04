@@ -23,6 +23,7 @@ import A3Dprintedoptogeneticdevice from "../assets/A3Dprintedoptogeneticdevice.j
 import EnhancedEndoscopicInternalDrainage from "../assets/EnhancedEndoscopicInternalDrainage.png";
 import tempTNSRE from  "../assets/tempTNSRE.png";
 import nyu_tech_venture from  "../assets/nyu-tech-venture-2026.png";
+import imgCEJ from  "../assets/imgCEJ.jpg";
 
 
 
@@ -245,8 +246,17 @@ const newsItems = [
             </>
         ),
         category: "Awards"
+    },
+    {
+    	id: 22,
+    	title: "3D printing of highly conductive biodegradable hydrogels for flexible electronic devices with sensing and energy storage capabilities",
+    	subtitle: "3D-Printed Conductive Biodegradable Hydrogels for Flexible Sensing and Energy Storage Applications",
+    	date: "2026",
+    	image: imgCEJ,
+    	link: "https://doi.org/10.1016/j.cej.2026.177433",
+    	excerpt: "This research collaborating with Chinese universities presents a new 3D-printing strategy for creating highly conductive and biodegradable hydrogels for flexible electronics. These hydrogels are characterized by excellent electrical conductivity, mechanical flexibility, and sustainability, making them suitable for sensing and energy storage. The study optimizes material formulation and advanced manufacturing techniques to develop multifunctional devices with reliable performance. This work showcases the potential of biodegradable electronics for next-generation wearable and sustainable technologies, as published in the Chemical Engineering Journal (Elsevier, IF: 13.2).",
+    	category: "Research"
     }
-
 ];
 
 const News = () => {
