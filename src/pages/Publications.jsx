@@ -95,6 +95,22 @@ const Publications = () => {
                 year: 2025,
                 doi: "https://doi.org/10.1002/admi.202401018",
             },
+            {
+                title: "A 3D-Printing-Based Optogenetic Neural Stimulator Integrated with Three Neural Recording Channels",
+                authors: "Keonghwan Oh, Jihong Lim, Yehhyun Jo, Jiwan Woo, Yakdol Cho, Soon-Jae Kweon, Hyunjoo Jenny Lee, and Sohmyung Ha",
+                journal: "IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE)",
+                year: 2026,
+                doi: "https://ieeexplore.ieee.org/document/11506577",
+            },
+            {
+                title: "3D printing of highly conductive biodegradable hydrogels for flexible electronic devices with sensing and energy storage capabilities",
+                authors: "Binbin Guo, Nana Li, Xiaoxia Song, Wanggen Xie, Pukar Maharjan, Vega Pradana Rachim, Ziliang Li, Honglin Chen, Zhixiang Chen, Sohmyung Ha, Funian Mo, and Qingxia Liu",
+                journal: "Chemical Engineering Journal (Elsevier)",
+                year: 2026,
+                doi: "10.1016/j.cej.2026.177433",
+                notes: "Published in collaboration with Chinese universities. Chemical Engineering Journal has an Impact Factor (IF) of 13.2. Zhixiang Chen, Sohmyung Ha, Funian Mo, and Qingxia Liu are co-corresponding authors."
+            },
+
         ],
         conference: [
             {
