@@ -666,6 +666,10 @@ body.home-page {
         height: 40vh;
     }
     /* All Investigator Meeting edit start*/
+    .investigator-meeting-section .block-heading {
+        font-size: 3.4rem;
+        line-height: 1.15;
+    }
     .investigator-meeting-text {
         text-align: center;
     }
