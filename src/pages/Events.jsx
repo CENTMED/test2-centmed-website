@@ -11,8 +11,18 @@ import QiaoquiangGanImage from "../assets/QiaoqiangGan_image.jpg";
 import DrAdamKhalifa from "../assets/DrAdamKhalifa.png";
 import ChulKimKAIST from "../assets/ChulKimKAIST.jpg";
 import nyHeroImage from "../assets/workshop_ny_header.png";
+import investigatorMeetingFlyer from "../assets/Centmed-Event-Oct-2026.png";
 
 const eventData = [
+    {
+        category: "Workshops",
+        title: "All-Investigator Meeting and Research Showcase Event",
+        speaker: "CENTMED Researchers",
+        date: "October 26, 2026",
+        university: "NYU Abu Dhabi, A6, StartAD Meeting Room",
+        image: investigatorMeetingFlyer,
+        detailsLink: "/events",
+    },
     {
         category: "Workshops",
         title: "Medical Devices and Implants Workshop",
