@@ -24,6 +24,7 @@ import EnhancedEndoscopicInternalDrainage from "../assets/EnhancedEndoscopicInte
 import tempTNSRE from  "../assets/tempTNSRE.png";
 import nyu_tech_venture from  "../assets/nyu-tech-venture-2026.png";
 import imgCEJ from  "../assets/imgCEJ.jpg";
+import investigatorMeetingFlyer from "../assets/Centmed-Event-Oct-2026.png";
 
 
 
@@ -256,6 +257,16 @@ const newsItems = [
     	link: "https://doi.org/10.1016/j.cej.2026.177433",
     	excerpt: "This research collaborating with Chinese universities presents a new 3D-printing strategy for creating highly conductive and biodegradable hydrogels for flexible electronics. These hydrogels are characterized by excellent electrical conductivity, mechanical flexibility, and sustainability, making them suitable for sensing and energy storage. The study optimizes material formulation and advanced manufacturing techniques to develop multifunctional devices with reliable performance. This work showcases the potential of biodegradable electronics for next-generation wearable and sustainable technologies, as published in the Chemical Engineering Journal (Elsevier, IF: 13.2).",
     	category: "Research"
+    },
+    {
+        id: 23,
+        title: "All-Investigator Meeting and Research Showcase Event",
+        subtitle: "Bringing together researchers, scholars, and industry partners to spotlight groundbreaking projects and spark cross-disciplinary partnerships.",
+        date: "October 26, 2026",
+        image: investigatorMeetingFlyer,
+        link: "/events",
+        excerpt: "CENTMED's All-Investigator Meeting and Research Showcase Event brings together researchers, scholars, and industry partners to spotlight groundbreaking projects and spark cross-disciplinary partnerships. The event will take place on Monday, October 26, 2026, from 5:30 to 8:30 PM at NYU Abu Dhabi, A6, StartAD Meeting Room.",
+        category: "Events"
     }
 ];
 
