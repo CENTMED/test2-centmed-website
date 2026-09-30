@@ -189,6 +189,13 @@ const newsItems = [
     	subtitle: "3D-Printed Conductive Biodegradable Hydrogels for Flexible Sensing and Energy Storage Applications",
     	image: imgCEJ,
     	link: "https://doi.org/10.1016/j.cej.2026.177433",
+    }, 
+    {
+        id: 23,
+        title: "All-Investigator Meeting and Research Showcase Event on October 26, 2026",
+        subtitle: "Bringing together researchers, scholars, and industry partners to spotlight groundbreaking projects and spark cross-disciplinary partnerships.",
+        image: investigatorMeetingFlyer,
+        link: "/events",
     }
 ];
 
