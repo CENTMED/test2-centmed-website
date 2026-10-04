@@ -104,21 +104,30 @@ body.home-page {
     position: relative;
 }
 
+/* Loading Screen */
 .ecg-container {
     position: relative;
-    width: 80%;
+    width: 100%; /*changed 80% to 100%*/
+    max-width: 600px; /*added this line*/
     height: 50px;
-    margin-top: -8px;
+    /*
+    margin-top: -8px; 
     margin-bottom: 20px;
-    overflow: hidden;
+    */
+    margin: -8px auto 20px;
+    overflow: visible; /*changed hidden to visible*/
 }
 
 .ecg-line {
+    display: block;
+    /*
     position: absolute;
     top: 0;
     left: 0;
+    */
     width: 100%;
     height: 100%;
+    overflow: visible; /*added this line*/
 }
 
 .ecg-line path {
@@ -596,6 +605,24 @@ body.home-page {
         box-sizing: border-box;
     }
 
+    /* Mobile Loading Screen Animation Adjustments */
+
+    .ecg-container {
+        width: 90%;
+        max-width: 340px;
+        height: 55px;
+    
+        margin: 0 auto 20px;
+    
+        overflow: visible;
+    }
+    
+    .ecg-line {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+    
     .title-container {
         flex: none;
         width: 100%;
