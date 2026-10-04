@@ -332,8 +332,8 @@ const NewsCarousel = () => {
                                 <svg
                                     ref={ecgRef}
                                     className="ecg-line"
-                                    viewBox="-15 0 630 50" /*changed 0 0 600 50 to -15 0 630 50*/
-                                    preserveAspectRatio="xMidYMid meet"
+                                    viewBox="-20 0 640 50" /*changed from 0 0 600 50 to -20 0 640 50*/
+                                    preserveAspectRatio="xMidYMid meet" /*changed from none to xMidYMid meet*/
                                 >
                                     <path
                                         d="M0,25 L150,25 L157,10 L163,40 L170,25 L300,25 L307,10 L313,40 L320,25 L450,25 L457,10 L463,40 L470,25 L600,25"
