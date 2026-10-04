@@ -22,33 +22,43 @@
 .people-hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(30, 15, 70, 0.75),
-        rgba(30, 15, 70, 0.1) 65%
-    );
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(27, 18, 67, 0.78) 0%,
+            rgba(27, 18, 67, 0.52) 28%,
+            rgba(27, 18, 67, 0.15) 55%,
+            rgba(27, 18, 67, 0.05) 100%
+        );
 }
 
 .people-hero-content {
     position: absolute;
-    left: 5rem;
+    left: 6rem;
     bottom: 4rem;
     color: white;
     z-index: 2;
     max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .people-hero-content h1 {
     font-size: 4.5rem;
     line-height: 1;
-    margin: 0 0 1rem;
+    margin: 0;
     font-weight: 700;
+    display: inline-block;
+    position: relative;
 }
 
 .people-hero-content h1::after {
     content: "";
     display: block;
-    width: 120px;
+    width: 100%;
     height: 4px;
     margin-top: 1rem;
     background-color: var(--teal);
@@ -58,8 +68,9 @@
 .people-hero-content p {
     font-size: 1.25rem;
     line-height: 1.5;
-    margin: 0;
+    margin: 1.5rem 0 0;
     max-width: 650px;
+    text-align: left;
 }
 
 /* Edits end here */
