@@ -327,13 +327,13 @@ const NewsCarousel = () => {
                         <div className="title-container">
                             <h1>Center for<br />Translational<br />Medical Devices</h1>
 
-                            {/* ECG Line */}
+                            {/* ECG Line Loading Screen*/}
                             <div className="ecg-container">
                                 <svg
                                     ref={ecgRef}
                                     className="ecg-line"
                                     viewBox="0 0 600 50"
-                                    preserveAspectRatio="none"
+                                    preserveAspectRatio="xMidYMid meet"
                                 >
                                     <path
                                         d="M0,25 L150,25 L157,10 L163,40 L170,25 L300,25 L307,10 L313,40 L320,25 L450,25 L457,10 L463,40 L470,25 L600,25"
