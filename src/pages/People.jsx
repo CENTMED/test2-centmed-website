@@ -26,6 +26,7 @@ import JuanBarajasGamboaImage from "../assets/JuanBarajasGamboa_image.png";
 import AndreImage from "../assets/Andre_image.jpg";
 import NurbergenAitmukhanbetovImage from "../assets/Nurbergen_Aitmukhanbetov_image.jpg";
 import SanzharKakenovImage from "../assets/SanzharKakenov_image.jpg";
+import TheaHayekImage from "../assets/TheaHayekImage.png";
 
 
 const sections = [
@@ -168,6 +169,12 @@ const sections = [
                 title: "RESEARCH STAFF",
                 description: "Sanzhar holds a Bachelor of Science in Biology with a specialization in Brain and Cognitive Science from New York University Abu Dhabi. His research primarily focuses on circadian neurobiology, with an emphasis on the mechanisms underlying rhythmic excitability in mammalian clock neurons within the suprachiasmatic nucleus. He has extensive experience with single-cell RNA sequencing, electrophysiology, and stereotaxic surgeries, complemented by a strong background in RNA transcriptomics, population genomics, and primary cell culture, including work with human umbilical mesenchymal stem cells. Sanzhar has presented his research at several scientific meetings, including the CGSB Symposium XIII, and was awarded the Excellent Presentation Award at the Molecular and Cellular Cognition Conference. At CENTMED, he is part of a collaborative project between the Micro- and Nanoscale Bioengineering Lab and the Laboratory of Neural Systems and Behaviour, where he investigates network phenotypes of Alzheimer’s disease and healthy human brain organoids using spatial scRNA-seq and electrophysiology.",
                 photo: SanzharKakenovImage
+            },
+            {
+                name: "Thea Hayek",
+                title: "RESEARCH STAFF",
+                description: "Thea Hayek holds a Bachelor of Science in Mechanical Engineering from New York University Abu Dhabi. Her work focuses on biomedical device development, combining computational modeling and experimental validation. She is currently working on the development of a minimally invasive glaucoma drainage implant, applying computational simulations and experimental testing to characterize fluid flow and device performance to optimize the implant design and surgical integration.",
+                photo: TheaHayekImage
             },
         ]
     },
