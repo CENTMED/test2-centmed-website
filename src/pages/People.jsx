@@ -280,7 +280,7 @@ const People = () => {
             <ScrollProgress />
             <section className="people-hero">
                 <img
-                    src={groupPhoto}
+                    src={GroupPhoto}
                     alt="CENTMED research team"
                     className="people-hero-image"
                 />
