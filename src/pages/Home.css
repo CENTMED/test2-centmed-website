@@ -560,7 +560,7 @@ body.home-page {
     .landing-section {
         height: auto;
         min-height: 100svh;
-        padding: 5rem 0 2rem; /*changed 1rem to 5rem*/
+        padding: 5rem 0 2rem; /*the first padding is responsible for the mobile top padding*/
         box-sizing: border-box;
 
         display: flex;
@@ -632,7 +632,7 @@ body.home-page {
 
         width: 100%;
         height: auto;
-        min-height: 320px;
+        min-height: 120px;/*changed 320px to 120px*/
 
         padding: 5rem;
         margin-top: 1rem;
@@ -648,7 +648,7 @@ body.home-page {
         width: 100% !important;
         height: auto !important;
 
-        max-width: 120px; /*changed 320px to 120px*/
+        max-width: 320px; 
         max-height: none;
 
         overflow: visible;
