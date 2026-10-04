@@ -28,6 +28,8 @@ import NurbergenAitmukhanbetovImage from "../assets/Nurbergen_Aitmukhanbetov_ima
 import SanzharKakenovImage from "../assets/SanzharKakenov_image.jpg";
 import TheaHayekImage from "../assets/TheaHayekImage.png";
 
+import GroupPhoto from "../assets/2026-CENTMED-GroupPhoto.jpg";
+
 
 const sections = [
     {
@@ -276,7 +278,26 @@ const People = () => {
     return (
         <div className="people-container">
             <ScrollProgress />
-            <h1 className="people-title">People</h1>
+            <section className="people-hero">
+                <img
+                    src={groupPhoto}
+                    alt="CENTMED research team"
+                    className="people-hero-image"
+                />
+            
+                <div className="people-hero-overlay"></div>
+            
+                <div className="people-hero-content">
+                    <h1>People</h1>
+                    <p>
+                        Meet the researchers, clinicians, collaborators, and staff
+                        behind CENTMED.
+                    </p>
+                </div>
+            </section>
+
+
+            
             {sections.map((section, index) => (
                 <div key={index} className="people-section">
                     <h2
