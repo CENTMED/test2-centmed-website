@@ -565,6 +565,11 @@ body.home-page {
 
 /* Specific adjustments for responsive design */
 @media (max-width: 768px) {
+
+    /*testing for landscape vs vertical phone orientations*/
+    .home-container {
+        overflow-x: visible;
+    }
     
     .landing-section {
         height: auto;
