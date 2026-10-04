@@ -634,13 +634,14 @@ body.home-page {
         height: auto;
         min-height: 120px;/*changed 320px to 120px*/
 
-        padding: 5rem;
+        padding: 1rem 0;
         margin-top: 1rem;
 
         display: flex;
         align-items: center;
         justify-content: center;
 
+        box-sizing: border-box;
         overflow: visible;
     }
 
@@ -651,6 +652,7 @@ body.home-page {
         max-width: 320px; 
         max-height: none;
 
+        display: block;
         overflow: visible;
     }
 
