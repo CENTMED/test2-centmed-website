@@ -560,7 +560,7 @@ body.home-page {
     .landing-section {
         height: auto;
         min-height: 100svh;
-        padding: 10rem 0 2rem; /*changed 1rem to 10rem*/
+        padding: 5rem 0 2rem; /*changed 1rem to 5rem*/
         box-sizing: border-box;
 
         display: flex;
@@ -648,7 +648,7 @@ body.home-page {
         width: 100% !important;
         height: auto !important;
 
-        max-width: 320px;
+        max-width: 120px; /*changed 320px to 120px*/
         max-height: none;
 
         overflow: visible;
