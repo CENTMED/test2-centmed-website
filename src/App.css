@@ -1,9 +1,9 @@
 #root {
-  max-width: 5280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  margin-bottom: 100px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  max-width: none;
 }
 
 .logo {
@@ -11,15 +11,6 @@
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
-}
-
-
-/* Add this to your global CSS or App.css */
-main,
-.content-container,
-#root>div {
-  padding-bottom: 80px;
-  /* Adjust based on your footer height */
 }
 
 @keyframes logo-spin {
