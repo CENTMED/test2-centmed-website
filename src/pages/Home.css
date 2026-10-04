@@ -271,7 +271,6 @@ body.home-page {
 
 
 
-
 /* Add these styles to your Home.css file */
 
 /* Landing Wrapper Styles - New container with rounded border */
@@ -433,69 +432,6 @@ body.home-page {
     max-height: 350px;
 }
 
-
-/* All Investigator Meeting Section */
-.investigator-meeting-section {
-    background-color: rgba(47, 12, 109, 0.04);
-}
-
-.event-eyebrow {
-    color: var(--teal);
-    font-size: 0.95rem;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    margin: 0 0 0.5rem;
-}
-
-.investigator-meeting-text {
-    text-align: left;
-    line-height: 1.7;
-}
-
-.event-details {
-    margin-top: 1.5rem;
-    line-height: 1.5;
-}
-
-.event-details p {
-    margin: 0.25rem 0;
-    font-size: 1.05rem;
-}
-
-
-/* Flyer */
-.investigator-flyer-container {
-    height: auto;
-    min-height: 500px;
-}
-
-.investigator-flyer {
-    width: auto;
-    height: auto;
-    max-width: 430px;
-    max-height: 600px;
-    object-fit: contain;
-
-    display: block;
-    margin: 0 auto;
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 12px 30px rgba(47, 12, 109, 0.18);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.investigator-flyer:hover {
-    transform: translateY(-6px);
-    box-shadow:
-        0 18px 40px rgba(47, 12, 109, 0.25);
-}
-
-
 /* News Carousel Styles */
 .news-carousel-container {
     width: 100%;
@@ -620,80 +556,129 @@ body.home-page {
 
 /* Specific adjustments for responsive design */
 @media (max-width: 768px) {
-    .split-svg-container {
-        min-height: 250px;
+    
+    .landing-section {
+        height: auto;
+        min-height: 100svh;
+        padding: 1rem 0 2rem;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        overflow: visible;
     }
 
     .landing-wrapper {
-        min-width: auto;
-        /* Remove the min-width on mobile */
+        width: 95%;
+        min-width: 0;
         height: auto;
-        min-height: 80vh;
+        min-height: 0;
+
+        margin: 0 auto;
         border-radius: 20px;
+
+        overflow: visible;
     }
 
     .landing-content {
-        padding: 1.5rem;
+        width: 100%;
+        height: auto;
+
+        padding: 2rem 1.5rem;
+
+        display: flex;
         flex-direction: column;
-    }
+        align-items: center;
+        justify-content: flex-start;
 
-
-    .landing-section {
-        height: 130vh;
+        box-sizing: border-box;
     }
 
     .title-container {
+        flex: none;
+        width: 100%;
+        height: auto;
+
         margin-left: 0;
-        padding-right: 0;
+        padding: 0;
+
         align-items: center;
         text-align: center;
-        height: auto;
-        /* Allow height to be determined by content */
     }
 
     .title-container h1 {
+        font-size: 2.5rem;
+        line-height: 1.15;
         text-align: center;
-        font-size: 2rem;
+        margin-top: 0;
     }
 
     .title-container .subtitle {
         font-size: 18px;
+        line-height: 1.55;
+
         max-width: 100%;
         text-align: center;
+
+        margin-bottom: 1.5rem;
     }
+
+    /* Loading Animation */
 
     .heart-animation-container {
+        flex: none;
+
+        width: 100%;
+        height: auto;
+        min-height: 320px;
+
+        padding: 0;
+        margin-top: 1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        overflow: visible;
+    }
+
+    .heart-animation-container svg {
+        width: 100% !important;
+        height: auto !important;
+
+        max-width: 420px;
+        max-height: none;
+
+        overflow: visible;
+    }
+
+    /* General Mobile Settings */
+
+    .split-svg-container {
+        min-height: 250px;
+    }
+
+    .landing-content,
+    .split-section-content {
+        flex-direction: column;
+    }
+
+    .split-text-container,
+    .split-svg-container {
+        flex: 0 0 100%;
+        padding: 1rem;
+    }
+
+    .split-svg-container {
         height: 40vh;
     }
-    /* All Investigator Meeting edit start*/
-    .investigator-meeting-section .block-heading {
-        font-size: 3.4rem;
-        line-height: 1.15;
-    }
-    .investigator-meeting-text {
-        text-align: center;
+
+    .split-text-container {
+        padding: 2rem;
     }
 
-    .event-eyebrow {
-        text-align: center;
-    }
-
-    .event-details {
-        text-align: center;
-    }
-
-    .investigator-flyer-container {
-        min-height: auto;
-        height: auto;
-        padding: 1.5rem;
-    }
-
-    .investigator-flyer {
-        width: 90%;
-        max-width: 360px;
-        max-height: none;
-    }
-    /* All Investigator Meeting edit end*/
     .block-heading {
         font-size: 2.2rem;
         text-align: center;
@@ -706,28 +691,20 @@ body.home-page {
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
         padding-bottom: 1rem;
-    }
-
-    .news-card {
-        scroll-snap-align: center;
-        min-width: 280px;
-    }
-
-    .carousel-arrow {
-        display: none;
-        /* Hide arrows on smaller screens, use native scrolling */
-    }
-
-    .news-carousel-container {
-        padding: 1rem 0.5rem;
-    }
-
-    .news-cards-container {
         gap: 1rem;
     }
 
     .news-card {
+        scroll-snap-align: center;
         min-width: 260px;
+    }
+
+    .carousel-arrow {
+        display: none;
+    }
+
+    .news-carousel-container {
+        padding: 1rem 0.5rem;
     }
 
     .news-card-content {
@@ -738,69 +715,13 @@ body.home-page {
         font-size: 1.1rem;
     }
 
-    .landing-content,
-    .split-section-content {
-        flex-direction: column;
-    }
-
-    .title-container,
-    .heart-animation-container,
-    .split-text-container,
-    .split-svg-container {
-        flex: 0 0 100%;
-        padding: 1rem;
-    }
-
-    .title-container h1 {
-        font-size: 2.5rem;
-        text-align: center;
-    }
-
-    .heart-animation-container,
-    .split-svg-container {
-        height: 40vh;
-    }
-
-    .split-text-container {
-        padding: 2rem;
-    }
-
-
     .block-buttons {
         flex-direction: column;
         align-items: center;
-        /* Centers the stacked buttons on mobile */
         gap: 0.75rem;
     }
 
     .section-button {
         width: fit-content;
-    }
-
-    .landing-wrapper {
-        width: 95%;
-        height: auto;
-        min-height: 80vh;
-        border-radius: 20px;
-    }
-
-    .landing-content {
-        padding: 1.5rem;
-        flex-direction: column;
-    }
-
-    .title-container {
-        margin-left: 0;
-        padding-right: 0;
-        align-items: center;
-        text-align: center;
-    }
-
-    .title-container .subtitle {
-        max-width: 100%;
-    }
-
-    .heart-animation-container {
-        height: 40vh;
     }
 }
