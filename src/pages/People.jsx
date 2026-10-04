@@ -290,8 +290,7 @@ const People = () => {
                 <div className="people-hero-content">
                     <h1>People</h1>
                     <p>
-                        Meet the researchers, clinicians, collaborators, and staff
-                        behind CENTMED.
+                        Meet the researchers, clinicians, collaborators, and staff behind CENTMED.
                     </p>
                 </div>
             </section>
