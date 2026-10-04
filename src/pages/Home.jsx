@@ -430,64 +430,7 @@ const NewsCarousel = () => {
                     </div>
                 </motion.section>
             ))}
-            {/* All Investigator Meeting Section */}
-            <motion.section
-                className="content-section investigator-meeting-section"
-                id="all-investigator-meeting"
-                viewport={{ once: false, amount: 0.3 }}
-            >
-                <div className="split-section-content">
             
-                    <motion.div
-                        className="split-text-container"
-                        initial={{ opacity: 0, x: -100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                    >
-                        <p className="event-eyebrow">UPCOMING EVENT</p>
-            
-                        <h2 className="block-heading">
-                            All-Investigator Meeting & Research Showcase
-                        </h2>
-            
-                        <p className="block-section-text investigator-meeting-text">
-                            Join CENTMED researchers, scholars, and industry partners
-                            to spotlight groundbreaking projects and spark
-                            cross-disciplinary partnerships.
-                        </p>
-            
-                        <div className="event-details">
-                            <p><strong>Monday, October 26, 2026</strong></p>
-                            <p>5:30 – 8:30 PM</p>
-                            <p>NYU Abu Dhabi · A6, StartAD Meeting Room</p>
-                        </div>
-            
-                        <div className="block-buttons">
-                            <Link to="/events" className="section-button">
-                                View Event
-                            </Link>
-                        </div>
-                    </motion.div>
-            
-                    <motion.div
-                        className="split-svg-container investigator-flyer-container"
-                        initial={{ opacity: 0, x: 100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{
-                            duration: 0.8,
-                            ease: "easeOut",
-                            delay: 0.2
-                        }}
-                    >
-                        <img
-                            src={investigatorMeetingFlyer}
-                            alt="CENTMED All-Investigator Meeting and Research Showcase — Monday, October 26, 2026"
-                            className="investigator-flyer"
-                        />
-                    </motion.div>
-            
-                </div>
-            </motion.section>       
             {/* News Section with Carousel */}
             <motion.section
                 className="content-section"
