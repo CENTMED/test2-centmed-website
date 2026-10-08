@@ -145,7 +145,7 @@ const sections = [
             {
                 name: "André Fensterseifer Schmidt",
                 title: "RESEARCH STAFF",
-                description: "André is pursuing the opportunity to do translational research on medical technologies as a Post-Doctoral Associate at CENTMED. His current endeavor is to communicate closely with physicians and apply multi-physics modeling expertise to design and develop innovative medical devices — thus bridging engineering solutions and unmet clinical needs.His background includes fatigue testing of stent-grafts, cardiac mechanics simulation, and modeling of endovascular drug delivery from drug-eluting stents and drug-coated balloons. André has earned a B.Eng. in Mechanical Engineering from the Universidade Federal de Santa Catarina, Brazil, followed by a Ph.D. from the University of Glasgow, United Kingdom.",
+                description: "As a Postdoctoral Associate at CENTMED, André communicates closely with physicians to conceptualize solutions for unmet clinical needs. He endeavours to design, model & simulate, prototype, and test innovative medical devices. His background includes fatigue testing of stent-grafts, cardiac mechanics simulation, and multi-physics modeling of endovascular drug delivery from drug-eluting stents and drug-coated balloons. André's education began with Mechanical Engineering at the Universidade Federal de Santa Catarina in Brazil, followed by a Ph.D. in Biomedical Engineering at the University of Glasgow in the United Kingdom.",
                 photo: AndreImage
             },
             {
