@@ -1,0 +1,132 @@
+
+media:
+  - name: images
+    label: Photos
+    input: public/uploads/images
+    output: /uploads/images
+    categories: [image]
+    rename: safe
+
+  - name: documents
+    label: Research PDFs
+    input: public/uploads/papers
+    output: /uploads/papers
+    categories: [document]
+    rename: safe
+
+content:
+  - name: publications
+    label: Research Papers
+    type: collection
+    path: src/content/publications
+    format: json
+    filename: "{primary}.json"
+    view:
+      primary: title
+    fields:
+      - name: title
+        label: Paper Title
+        type: string
+        required: true
+
+      - name: authors
+        label: Authors
+        type: string
+        required: true
+
+      - name: year
+        label: Publication Year
+        type: number
+        required: true
+
+      - name: journal
+        label: Journal / Conference
+        type: string
+
+      - name: doi
+        label: DOI
+        type: string
+
+      - name: pdf
+        label: Upload PDF
+        type: file
+        options:
+          media: documents
+
+      - name: description
+        label: Description
+        type: text
+
+      - name: published
+        label: Show on Website
+        type: boolean
+
+  - name: events
+    label: Events
+    type: collection
+    path: src/content/events
+    format: json
+    filename: "{primary}.json"
+    view:
+      primary: title
+    fields:
+      - name: title
+        label: Event Title
+        type: string
+        required: true
+
+      - name: date
+        label: Event Date
+        type: date
+        required: true
+
+      - name: location
+        label: Location
+        type: string
+
+      - name: description
+        label: Event Description
+        type: text
+
+      - name: image
+        label: Event Photo
+        type: image
+        options:
+          media: images
+
+      - name: published
+        label: Show on Website
+        type: boolean
+
+  - name: gallery
+    label: Photo Gallery
+    type: collection
+    path: src/content/gallery
+    format: json
+    filename: "{primary}.json"
+    view:
+      primary: title
+    fields:
+      - name: title
+        label: Photo Title
+        type: string
+        required: true
+
+      - name: image
+        label: Upload Photo
+        type: image
+        required: true
+        options:
+          media: images
+
+      - name: caption
+        label: Photo Caption
+        type: text
+
+      - name: date
+        label: Photo Date
+        type: date
+
+      - name: published
+        label: Show on Website
+        type: boolean
