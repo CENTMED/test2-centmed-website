@@ -12,7 +12,7 @@ import DrAdamKhalifa from "../assets/DrAdamKhalifa.png";
 import ChulKimKAIST from "../assets/ChulKimKAIST.jpg";
 import nyHeroImage from "../assets/workshop_ny_header.png";
 import investigatorMeetingFlyer from "../assets/Centmed-Event-Oct-2026.png";
-import PaulDowneyImage from "PaulDowneyImage";
+import PaulDowneyImage from "../assets/PaulDowneyImage.png";
 
 const eventData = [
     {
