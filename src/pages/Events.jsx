@@ -12,8 +12,17 @@ import DrAdamKhalifa from "../assets/DrAdamKhalifa.png";
 import ChulKimKAIST from "../assets/ChulKimKAIST.jpg";
 import nyHeroImage from "../assets/workshop_ny_header.png";
 import investigatorMeetingFlyer from "../assets/Centmed-Event-Oct-2026.png";
+import PaulDowneyImage from "PaulDowneyImage";
 
 const eventData = [
+    {
+        category: "CENTMED Seminar Series",
+        title: "Biobanking as a Strategic Enabler of Translational Science",
+        speaker: "Paul Downey",
+        date: "Nov 4th, 2026",
+        university: "Abu Dhabi Biobank (M42), UAE",
+        image: PaulDowneyImage,
+    },
     {
         category: "Workshops",
         title: "All-Investigator Meeting and Research Showcase Event",
