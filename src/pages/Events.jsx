@@ -121,7 +121,6 @@ const eventData = [
 ];
 
 // changed the block below entirely T^T
-
 const Events = () => {
     const [selectedEvent, setSelectedEvent] = useState(null);
     const modalRef = React.useRef(null);
@@ -250,14 +249,22 @@ const Events = () => {
                                 </p>
 
                                 <h2 id="schedule-modal-heading">
-                                    Event Schedule
+                                    {selectedEvent.title}
                                 </h2>
-
+                                
+                                <p className="schedule-modal-talk-subtitle">
+                                    {selectedEvent.subtitle}
+                                </p>
+                                
                                 <p className="schedule-modal-subtitle">
                                     {selectedEvent.speaker}
                                     {" | "}
                                     {selectedEvent.date}
                                 </p>
+                                
+                                <h3 className="schedule-modal-agenda-heading">
+                                    Event Schedule
+                                </h3>
                             </div>
 
                             {/* Visible X close button */}
