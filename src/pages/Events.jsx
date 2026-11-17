@@ -14,7 +14,7 @@ import ChulKimKAIST from "../assets/ChulKimKAIST.jpg";
 import nyHeroImage from "../assets/workshop_ny_header.png";
 import investigatorMeetingFlyer from "../assets/Centmed-Event-Oct-2026.png";
 import PaulDowneyImage from "../assets/PaulDowneyImage.png";
-import KindaKhalafImage from "../assets/Centmed-Event-Oct-2026.png"; //change when actual pic is uploaded
+import KindaKhalafImage from "../assets/KindaKhalafImage.png"; 
 
 
 const eventData = [
