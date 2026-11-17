@@ -121,6 +121,7 @@ const eventData = [
 ];
 
 // changed the block below entirely T^T
+
 const Events = () => {
     const [selectedEvent, setSelectedEvent] = useState(null);
     const modalRef = React.useRef(null);
@@ -259,6 +260,7 @@ const Events = () => {
                                 </p>
                             </div>
 
+                            {/* Visible X close button */}
                             <button
                                 type="button"
                                 className="schedule-modal-close"
@@ -266,6 +268,7 @@ const Events = () => {
                                 aria-label="Close schedule"
                             >
                                 <X size={24} strokeWidth={2.5} />
+                            </button>
                         </div>
 
                         <div className="schedule-modal-body">
@@ -306,3 +309,4 @@ const Events = () => {
 };
 
 export default Events;
+
