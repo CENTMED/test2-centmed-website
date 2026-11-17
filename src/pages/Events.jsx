@@ -16,6 +16,7 @@ import investigatorMeetingFlyer from "../assets/Centmed-Event-Oct-2026.png";
 import PaulDowneyImage from "../assets/PaulDowneyImage.png";
 import KindaKhalafImage from "../assets/Centmed-Event-Oct-2026.png"; //change when actual pic is uploaded
 
+
 const eventData = [
     {
         category: "CENTMED Seminar Series",
@@ -304,8 +305,5 @@ const Events = () => {
         </div>
     );
 };
-
-export default Events;
-
 
 export default Events;
