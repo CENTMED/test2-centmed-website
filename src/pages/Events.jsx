@@ -21,6 +21,7 @@ const eventData = [
     {
         category: "CENTMED Seminar Series",
         title: "Technology-Enabled Stroke Rehabilitation: Bedside to Stride",
+        subtitle: "Exploring How AI, Wearable Sensors, and Robotics Can Transform Stroke Recovery from Hospital Care to Independent Mobility",
         speaker: "Prof. Kinda Khalaf",
         date: "November 18, 2026",
         university: "NYU Abu Dhabi, C1-120",
@@ -214,7 +215,7 @@ const Events = () => {
                                         onClick={() => openSchedule(event)}
                                     >
                                         <CalendarDays size={19} />
-                                        View Schedule
+                                        View More Information
                                     </button>
                                 )}
                             </div>
