@@ -281,6 +281,22 @@
     color: var(--purple, #590090);
     flex-shrink: 0;
 }
+/* Talk subtitle in event information modal */
+
+.schedule-modal-talk-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #596575;
+    margin: 10px 0 16px;
+}
+
+.schedule-modal-agenda-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--purple);
+    margin: 24px 0 0;
+}
 
 /* Highlight the main public seminar */
 
@@ -366,6 +382,17 @@
         flex-direction: column;
         text-align: center;
     }
+    
+@media screen and (max-width: 480px) {
+    .schedule-modal-talk-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .schedule-modal-agenda-heading {
+        font-size: 1.1rem;
+    }
+}
+
 /* ======================================
    EVENT SCHEDULE MODAL END
    ====================================== */
