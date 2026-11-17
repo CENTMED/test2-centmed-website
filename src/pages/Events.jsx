@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react"; // Changed to use pop-up windows for extra info
 import { motion } from "framer-motion"; // Import motion from framer-motion
 import { Link } from "react-router-dom"; // Import for NY Workshop page
 
 import "./Events.css";
 import ScrollProgress from "../components/ScrollProgress.jsx";
-import { CalendarDays, Users, University } from "lucide-react";
+// import { CalendarDays, Users, University } from "lucide-react";
+import { CalendarDays, Users, University, Clock3, MapPin, X} from "lucide-react";
 import AliAsgarBhagatImage from "../assets/AliAsgarBhagat_image.jpg";
 import SamuelTangImage from "../assets/SamuelTang_image.jpg";
 import QiaoquiangGanImage from "../assets/QiaoqiangGan_image.jpg";
@@ -13,8 +14,43 @@ import ChulKimKAIST from "../assets/ChulKimKAIST.jpg";
 import nyHeroImage from "../assets/workshop_ny_header.png";
 import investigatorMeetingFlyer from "../assets/Centmed-Event-Oct-2026.png";
 import PaulDowneyImage from "../assets/PaulDowneyImage.png";
+import KindaKhalafImage from "../assets/Centmed-Event-Oct-2026.png"; //change when actual pic is uploaded
 
 const eventData = [
+    {
+        category: "CENTMED Seminar Series",
+        title: "Technology-Enabled Stroke Rehabilitation: Bedside to Stride",
+        speaker: "Prof. Kinda Khalaf",
+        date: "November 18, 2026",
+        university: "NYU Abu Dhabi, C1-120",
+        image: KindaKhalafImage,
+    
+        schedule: [
+            {
+                time: "11:30 AM – 12:30 PM",
+                activity: "Lab Tour / Faculty Meeting",
+                location: "TBD"
+            },
+            {
+                time: "12:30 PM – 1:30 PM",
+                activity: "Luncheon Meeting",
+                description: "Mohammad Qasaimeh, Associate Professor of Mechanical Engineering and Bioengineering",
+                location: "TBD"
+            },
+            {
+                time: "2:00 PM – 3:00 PM",
+                activity: "CENTMED Seminar: Technology-Enabled Stroke Rehabilitation: Bedside to Stride",
+                location: "C1-120",
+                highlight: true
+            },
+            {
+                time: "3:00 PM – 3:30 PM",
+                activity: "Meeting with Rafael Song",
+                description: "Director of CENTMED; Professor of Mechanical Engineering and Bioengineering",
+                location: "C1-165"
+            }
+        ]
+    },
     {
         category: "CENTMED Seminar Series",
         title: "Biobanking as a Strategic Enabler of Translational Science",
@@ -83,43 +119,193 @@ const eventData = [
     },
 ];
 
+// changed the block below entirely T^T
 const Events = () => {
+    const [selectedEvent, setSelectedEvent] = useState(null);
+    const modalRef = React.useRef(null);
+
+    const openSchedule = (event) => {
+        setSelectedEvent(event);
+    };
+
+    const closeSchedule = () => {
+        modalRef.current?.close();
+    };
+
+    useEffect(() => {
+        const modal = modalRef.current;
+        if (!modal) return;
+
+        if (selectedEvent) {
+            if (!modal.open) modal.showModal();
+        } else if (modal.open) {
+            modal.close();
+        }
+    }, [selectedEvent]);
+
+    useEffect(() => {
+        const modal = modalRef.current;
+        if (!modal) return;
+
+        const handleClose = () => setSelectedEvent(null);
+        modal.addEventListener("close", handleClose);
+
+        return () => modal.removeEventListener("close", handleClose);
+    }, []);
+
     return (
         <div className="events-container">
             <ScrollProgress />
+
             <h1 className="events-title">Events</h1>
+
             <div className="events-list">
                 {eventData.map((event, index) => (
                     <motion.div
                         key={index}
                         className="event-card"
-                        initial={{ y: 50, opacity: 0 }} // Start from below and hidden
-                        whileInView={{ y: 0, opacity: 1 }} // Move to its final position (top) and become visible
-                        viewport={{ once: true, amount: 0.2 }} // Trigger animation once the section is 20% in view
-                        transition={{ duration: 0.3, ease: "easeOut" }} // Smooth transition
+                        initial={{ y: 50, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        transition={{
+                            duration: 0.3,
+                            ease: "easeOut"
+                        }}
                     >
                         <div className="event-info">
-                            <p className="event-category">{event.category}</p>
-                            <h2 className="event-title">{event.title}</h2>
-                            <p className="event-speaker"><Users size={24} color="var(--purple)" /> {event.speaker}</p>
-                            <p className="event-university"><University size={24} color="var(--purple)" /> {event.university}</p>
-                            <p className="event-date"><CalendarDays size={24} color="var(--purple)" /> {event.date}</p> 
-                            {event.detailsLink && (
-                            <div style={{ marginTop: "14px" }}>
-                                <Link to={event.detailsLink} className="section-button">
-                                    View details
-                                </Link>
+                            <p className="event-category">
+                                {event.category}
+                            </p>
+
+                            <h2 className="event-title">
+                                {event.title}
+                            </h2>
+
+                            <p className="event-speaker">
+                                <Users size={24} color="var(--purple)" />
+                                {event.speaker}
+                            </p>
+
+                            <p className="event-university">
+                                <University size={24} color="var(--purple)" />
+                                {event.university}
+                            </p>
+
+                            <p className="event-date">
+                                <CalendarDays size={24} color="var(--purple)" />
+                                {event.date}
+                            </p>
+
+                            <div className="event-actions">
+                                {event.detailsLink && (
+                                    <Link
+                                        to={event.detailsLink}
+                                        className="section-button"
+                                    >
+                                        View details
+                                    </Link>
+                                )}
+
+                                {event.schedule && (
+                                    <button
+                                        type="button"
+                                        className="event-schedule-button"
+                                        onClick={() => openSchedule(event)}
+                                    >
+                                        <CalendarDays size={19} />
+                                        View Schedule
+                                    </button>
+                                )}
                             </div>
-                        )}
                         </div>
-                        <img className="event-image" src={event.image} alt={event.speaker} />
+
+                        <img
+                            className="event-image"
+                            src={event.image}
+                            alt={event.speaker}
+                        />
                     </motion.div>
                 ))}
             </div>
-            <p></p>
-            <p></p>
+
+            {/* Schedule pop-up modal */}
+            <dialog
+                ref={modalRef}
+                className="schedule-modal"
+                aria-labelledby="schedule-modal-heading"
+                onClick={(e) => {
+                    if (e.target === e.currentTarget) {
+                        closeSchedule();
+                    }
+                }}
+            >
+                {selectedEvent && (
+                    <div className="schedule-modal-content">
+                        <div className="schedule-modal-header">
+                            <div>
+                                <p className="schedule-modal-category">
+                                    CENTMED Seminar & Campus Visit
+                                </p>
+
+                                <h2 id="schedule-modal-heading">
+                                    Event Schedule
+                                </h2>
+
+                                <p className="schedule-modal-subtitle">
+                                    {selectedEvent.speaker}
+                                    {" | "}
+                                    {selectedEvent.date}
+                                </p>
+                            </div>
+
+                            <button
+                                type="button"
+                                className="schedule-modal-close"
+                                onClick={closeSchedule}
+                                aria-label="Close schedule"
+                            >
+                                <X size={24} />
+                            </button>
+                        </div>
+
+                        <div className="schedule-modal-body">
+                            {selectedEvent.schedule?.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className={`schedule-row ${
+                                        item.highlight
+                                            ? "schedule-row-highlight"
+                                            : ""
+                                    }`}
+                                >
+                                    <div className="schedule-row-time">
+                                        <Clock3 size={18} />
+                                        <span>{item.time}</span>
+                                    </div>
+
+                                    <div className="schedule-row-details">
+                                        <h3>{item.activity}</h3>
+
+                                        {item.description && (
+                                            <p>{item.description}</p>
+                                        )}
+
+                                        <div className="schedule-row-location">
+                                            <MapPin size={16} />
+                                            <span>{item.location}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
+            </dialog>
         </div>
     );
 };
+
+export default Events;
+
 
 export default Events;
