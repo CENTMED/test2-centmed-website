@@ -265,6 +265,8 @@ const Events = () => {
                                 onClick={closeSchedule}
                                 aria-label="Close schedule"
                             >
+                                <X size={24} strokeWidth={2.5} />
+                            </button>
                                 <X size={24} />
                             </button>
                         </div>
