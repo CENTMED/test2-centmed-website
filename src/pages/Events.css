@@ -182,23 +182,43 @@
     margin: 0;
 }
 
+.schedule-modal-content {
+    position: relative;
+}
+
 .schedule-modal-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    width: 38px;
-    height: 38px;
-    background: #f4eff9;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    background-color: #f1e8fa;
+    color: #590090;
     border: none;
     border-radius: 50%;
-    color: var(--purple, #590090);
     cursor: pointer;
 }
 
-.schedule-modal-close:hover {
-    background: #e9d9f5;
+.schedule-modal-close svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
 }
+
+.schedule-modal-close:hover {
+    background-color: #e3d1f3;
+}
+
+.schedule-modal-header {
+    padding-right: 48px;
+}
+
 
 /* Schedule rows */
 
