@@ -88,7 +88,245 @@
     /* Adjust this value if needed */
 }
 
-/* Mobile Responsive Media Queries - Add these to your Events.css file */
+
+/* ======================================
+   EVENT SCHEDULE MODAL START
+   ====================================== */
+
+/* Button inside existing event card */
+
+.event-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.event-schedule-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 24px;
+    background: var(--purple, #590090);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.event-schedule-button:hover {
+    background: #39006d;
+}
+
+/* Centered modal */
+
+.schedule-modal {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: min(90%, 760px);
+    max-height: 85vh;
+    padding: 0;
+    border: none;
+    border-radius: 18px;
+    background: white;
+    color: #23384b;
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.schedule-modal::backdrop {
+    background: rgba(20, 10, 45, 0.65);
+    backdrop-filter: blur(4px);
+}
+
+/* Modal heading */
+
+.schedule-modal-content {
+    padding: 32px;
+}
+
+.schedule-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #e9e3f0;
+}
+
+.schedule-modal-category {
+    color: var(--purple, #590090);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.schedule-modal-header h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #23384b;
+    margin: 0 0 8px;
+}
+
+.schedule-modal-subtitle {
+    font-size: 0.95rem;
+    color: #667085;
+    margin: 0;
+}
+
+.schedule-modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    background: #f4eff9;
+    border: none;
+    border-radius: 50%;
+    color: var(--purple, #590090);
+    cursor: pointer;
+}
+
+.schedule-modal-close:hover {
+    background: #e9d9f5;
+}
+
+/* Schedule rows */
+
+.schedule-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 24px;
+}
+
+.schedule-row {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 20px;
+    padding: 18px;
+    background: #faf8fd;
+    border-radius: 12px;
+    border-left: 4px solid #e5d6f0;
+}
+
+.schedule-row-time {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    color: var(--purple, #590090);
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.schedule-row-time svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.schedule-row-details h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #23384b;
+    margin: 0 0 6px;
+}
+
+.schedule-row-details p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #667085;
+    margin: 0 0 10px;
+}
+
+.schedule-row-location {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #667085;
+    font-size: 0.85rem;
+}
+
+.schedule-row-location svg {
+    color: var(--purple, #590090);
+    flex-shrink: 0;
+}
+
+/* Highlight the main public seminar */
+
+.schedule-row-highlight {
+    background: #f2eafa;
+    border-left-color: var(--purple, #590090);
+}
+
+.schedule-row-highlight h3 {
+    color: var(--purple, #590090);
+}
+
+/* Keyboard accessibility */
+
+.event-schedule-button:focus-visible,
+.schedule-modal-close:focus-visible {
+    outline: 3px solid var(--teal, #0098a8);
+    outline-offset: 3px;
+}
+
+/* Mobile layout */
+
+@media screen and (max-width: 768px) {
+    .schedule-modal {
+        width: 94%;
+        max-height: 90vh;
+        border-radius: 14px;
+    }
+
+    .schedule-modal-content {
+        padding: 22px;
+    }
+
+    .schedule-modal-header h2 {
+        font-size: 1.45rem;
+    }
+
+    .schedule-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .event-actions {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .schedule-modal-content {
+        padding: 18px;
+    }
+
+    .schedule-row {
+        padding: 13px;
+    }
+
+    .schedule-modal-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .event-schedule-button {
+        font-size: 0.9rem;
+    }
+}
+
 
 /* Tablet styles (768px and below) */
 @media screen and (max-width: 768px) {
@@ -108,7 +346,10 @@
         flex-direction: column;
         text-align: center;
     }
-
+/* ======================================
+   EVENT SCHEDULE MODAL END
+   ====================================== */
+    
     .event-info {
         margin-bottom: 20px;
     }
