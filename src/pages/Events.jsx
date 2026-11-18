@@ -27,16 +27,11 @@ const eventData = [
         university: "NYU Abu Dhabi, C1-120",
         image: KindaKhalafImage,
 
-        abstract: `Stroke rehabilitation is undergoing a transformation through emerging technologies.
-                
-                    This presentation explores several key areas:
-                
-                        • Artificial intelligence in rehabilitation
-                        • Wearable sensors for movement tracking
-                        • Robotics for mobility assistance
-                
-                    These technologies offer new possibilities for improving patient outcomes.`
-        
+        abstract: 
+            `    Stroke is a leading cause of death and long-term disability worldwide, with more than 100 million people living post stroke and an estimated annual cost of US$890 billion, globally. In the Middle East and North Africa, the number of new strokes rose by more than 130% between 1990 and 2019, and patients in the UAE present at notably younger ages than in Western cohorts. Routine post-stroke care still leaves major gaps across the recovery pathway. Patients spend much of the acute phase inactive, gait therapy sessions are low in dose, progress at home is rarely measured, and close to half of survivors fall within the first year after discharge.
+                This talk follows the patient journey from the acute bedside to independent walking in the community. It shows how technology: sensing, wearables, and artificial intelligence can link one longitudinal patient record across settings that have traditionally been disconnected. It reviews current evidence for connected rehabilitation, from AI-assisted imaging and recovery prediction to telerehabilitation and wearable-assisted home programs. It then presents work from the HITT  (Healthcare Innovation Technologies & Translation) Lab at Khalifa University, including multimodal physiological quantification of movement impairment, a systematic review of control strategies for cable-driven gait exoskeletons, and the simulation-first C-LREX framework, which corrected four of five clinical stroke gait patterns within safe cable tension limits. The talk closes with a closed-loop vision of sense, connect, estimate, assist, and review, and outlines the barriers to clinical translation.
+            `
+            
     },
     {
         category: "CENTMED Seminar Series",
