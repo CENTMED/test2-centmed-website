@@ -329,7 +329,9 @@
     line-height: 1.8;
     color: #596575;
     margin: 0;
-    white-space: pre-line;
+
+    white-space: pre-wrap;
+    tab-size: 4;
 }
 
 /* Mobile layout */
