@@ -27,31 +27,7 @@ const eventData = [
         university: "NYU Abu Dhabi, C1-120",
         image: KindaKhalafImage,
     
-        schedule: [
-            {
-                time: "11:30 AM – 12:30 PM",
-                activity: "Lab Tour / Faculty Meeting",
-                location: "TBD"
-            },
-            {
-                time: "12:30 PM – 1:30 PM",
-                activity: "Luncheon Meeting",
-                description: "Mohammad Qasaimeh, Associate Professor of Mechanical Engineering and Bioengineering",
-                location: "TBD"
-            },
-            {
-                time: "2:00 PM – 3:00 PM",
-                activity: "CENTMED Seminar: Technology-Enabled Stroke Rehabilitation: Bedside to Stride",
-                location: "C1-120",
-                highlight: true
-            },
-            {
-                time: "3:00 PM – 3:30 PM",
-                activity: "Meeting with Rafael Song",
-                description: "Director of CENTMED; Professor of Mechanical Engineering and Bioengineering",
-                location: "C1-165"
-            }
-        ]
+        abstract: 'Stroke is a leading cause of death and long-term disability worldwide, with more than 100 million people living post stroke and an estimated annual cost of US$890 billion, globally. In the Middle East and North Africa, the number of new strokes rose by more than 130% between 1990 and 2019, and patients in the UAE present at notably younger ages than in Western cohorts. Routine post-stroke care still leaves major gaps across the recovery pathway. Patients spend much of the acute phase inactive, gait therapy sessions are low in dose, progress at home is rarely measured, and close to half of survivors fall within the first year after discharge. This talk follows the patient journey from the acute bedside to independent walking in the community. It shows how technology: sensing, wearables, and artificial intelligence can link one longitudinal patient record across settings that have traditionally been disconnected. It reviews current evidence for connected rehabilitation, from AI-assisted imaging and recovery prediction to telerehabilitation and wearable-assisted home programs. It then presents work from the HITT  (Healthcare Innovation Technologies & Translation) Lab at Khalifa University, including multimodal physiological quantification of movement impairment, a systematic review of control strategies for cable-driven gait exoskeletons, and the simulation-first C-LREX framework, which corrected four of five clinical stroke gait patterns within safe cable tension limits. The talk closes with a closed-loop vision of sense, connect, estimate, assist, and review, and outlines the barriers to clinical translation.',
     },
     {
         category: "CENTMED Seminar Series",
@@ -208,7 +184,7 @@ const Events = () => {
                                     </Link>
                                 )}
 
-                                {event.schedule && (
+                                {event.abstract && (
                                     <button
                                         type="button"
                                         className="event-schedule-button"
@@ -277,8 +253,14 @@ const Events = () => {
                             >
                                 <X size={24} strokeWidth={2.5} />
                             </button>
+                        </div>             
+                        <div className="schedule-modal-body">
+                            <div className="event-abstract">
+                                <h3>Abstract</h3>
+                                <p>{selectedEvent.abstract}</p>
+                            </div>
                         </div>
-
+                        {/*
                         <div className="schedule-modal-body">
                             {selectedEvent.schedule?.map((item, index) => (
                                 <div
@@ -308,7 +290,7 @@ const Events = () => {
                                     </div>
                                 </div>
                             ))}
-                        </div>
+                        </div> */}
                     </div>
                 )}
             </dialog>
